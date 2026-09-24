@@ -1,0 +1,52 @@
+name: Documentation
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: documentation-${{ github.event.workflow_run.head_branch || github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  build:
+    name: Build documentation
+    uses: hubuum/.github/.github/workflows/docs-build.yml@b900399e221aa53b09d280c13052e09f64929550 # shared documentation platform
+    with:
+      tooling_revision: 'b900399e221aa53b09d280c13052e09f64929550'
+      source_ref: ${{ (github.event_name == 'release' || github.event_name == 'workflow_run') && 'main' || github.sha }}
+      versioned: false
+      python_api: false
+
+  check:
+    name: Documentation check
+    needs: build
+    if: always() && needs.build.result != 'skipped'
+    runs-on: ubuntu-24.04
+    steps:
+      - env:
+          BUILD: ${{ needs.build.result }}
+        run: test "$BUILD" = success
+
+  publish:
+    name: Publish documentation
+    needs: [build, check]
+    if: >-
+      github.repository == 'hubuum/hubuum.github.io' &&
+      ((github.ref == 'refs/heads/main' && github.event_name != 'pull_request') ||
+      (github.event_name == 'release' && !github.event.release.prerelease) ||
+      (github.event_name == 'workflow_run' && github.event.workflow_run.event == 'push' &&
+      github.event.workflow_run.conclusion == 'success'))
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+    uses: hubuum/.github/.github/workflows/docs-publish.yml@b900399e221aa53b09d280c13052e09f64929550 # shared documentation platform
+    with:
+      tooling_revision: 'b900399e221aa53b09d280c13052e09f64929550'
+      source_sha: ${{ needs.build.outputs.source_sha }}

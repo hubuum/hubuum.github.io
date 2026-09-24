@@ -1,0 +1,16 @@
+[project]
+site_name = "Hubuum"
+site_description = "Connected operational data, with a server, web console, CLI, and typed Rust and Python clients."
+site_url = "https://hubuum.github.io/"
+repo_url = "https://github.com/hubuum/hubuum.github.io"
+repo_name = "hubuum/hubuum.github.io"
+edit_uri = "edit/main/docs/"
+docs_dir = "docs"
+nav = [
+  { "Welcome" = "index.md" },
+  { "Get started" = "get-started.md" },
+  { "Community" = "community.md" },
+]
+
+[tool.hubuum_docs]
+versioned = false
