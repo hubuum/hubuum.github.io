@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow"><title>Hubuum — Connected landing page studies</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="assets/site.css">
+</head>
+<body class="gallery">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="container gallery-header"><a class="brand" href="index.html">$symbol<span>hubuum</span></a><span class="eyebrow">Design studies / September 2026</span><a class="text-link" href="https://hubuum.github.io/">Current website ↗</a></header>
+  <main class="container" id="main">
+    <section class="gallery-intro"><p class="eyebrow">A shared centre. Three perspectives.</p><h1>A world of connections.<br><em>A place to bring them together.</em></h1><p>Three directions for Hubuum’s next front page. Each explores the same idea: independent systems, connected through a common model. Open a study and follow the story as it unfolds.</p></section>
+    <div class="concept-grid">$cards</div>
+    <section class="review-notes"><div><span class="eyebrow">What to look for</span><h2>The feeling.<br>The flow.<br>The connections.</h2></div><div><p>These are complete scrolling studies, with working navigation and a small interactive explanation of the resource model. Compare the opening image, the transition into the story, and the way the ecosystem is introduced.</p><p><strong>Confluence</strong> is the calmest direction. <strong>Orbit</strong> makes the strongest statement about the hub. <strong>Fabric</strong> gives the model an architectural, editorial character.</p><p>The network artwork is conceptual imagery. It illustrates the product’s ideas, rather than depicting a graph visualisation in the current frontend.</p></div></section>
+  </main>
+  <footer class="container gallery-footer"><span>Hubuum / Landing page exploration</span><span>Shared story. Original vector artwork. Three distinct directions.</span></footer>
+</body>
+</html>

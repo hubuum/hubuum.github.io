@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 760" role="img" aria-labelledby="title"><title id="title">An illuminated Hubuum centre connects a constellation of independent systems</title>
+<defs>
+    <radialGradient id="halo"><stop stop-color="#6dcbbc" stop-opacity=".34"/><stop offset=".42" stop-color="#39898c" stop-opacity=".12"/><stop offset="1" stop-color="#164954" stop-opacity="0"/></radialGradient>
+    <radialGradient id="pearl" cx=".35" cy=".2"><stop stop-color="#fffef0"/><stop offset=".65" stop-color="#c2f3de"/><stop offset="1" stop-color="#77beaf"/></radialGradient>
+    <linearGradient id="arc"><stop stop-color="#629fba" stop-opacity=".08"/><stop offset=".5" stop-color="#a8d7cb" stop-opacity=".7"/><stop offset="1" stop-color="#73b7b2" stop-opacity=".08"/></linearGradient>
+    </defs><ellipse cx="700" cy="377" rx="520" ry="365" fill="url(#halo)"/>
+<ellipse cx="700" cy="380" rx="460" ry="153" transform="rotate(-27 700 380)" fill="none" stroke="url(#arc)" stroke-width=".8"/>
+<ellipse cx="700" cy="380" rx="478" ry="167" transform="rotate(-27 700 380)" fill="none" stroke="url(#arc)" stroke-width=".8"/>
+<ellipse cx="700" cy="380" rx="496" ry="181" transform="rotate(-27 700 380)" fill="none" stroke="url(#arc)" stroke-width=".8"/>
+<ellipse cx="700" cy="380" rx="460" ry="153" transform="rotate(-14 700 380)" fill="none" stroke="url(#arc)" stroke-width=".8"/>
+<ellipse cx="700" cy="380" rx="478" ry="167" transform="rotate(-14 700 380)" fill="none" stroke="url(#arc)" stroke-width=".8"/>
+<ellipse cx="700" cy="380" rx="496" ry="181" transform="rotate(-14 700 380)" fill="none" stroke="url(#arc)" stroke-width=".8"/>
+<ellipse cx="700" cy="380" rx="460" ry="153" transform="rotate(0 700 380)" fill="none" stroke="url(#arc)" stroke-width=".8"/>
+<ellipse cx="700" cy="380" rx="478" ry="167" transform="rotate(0 700 380)" fill="none" stroke="url(#arc)" stroke-width=".8"/>
+<ellipse cx="700" cy="380" rx="496" ry="181" transform="rotate(0 700 380)" fill="none" stroke="url(#arc)" stroke-width=".8"/>
+<ellipse cx="700" cy="380" rx="460" ry="153" transform="rotate(14 700 380)" fill="none" stroke="url(#arc)" stroke-width=".8"/>
+<ellipse cx="700" cy="380" rx="478" ry="167" transform="rotate(14 700 380)" fill="none" stroke="url(#arc)" stroke-width=".8"/>
+<ellipse cx="700" cy="380" rx="496" ry="181" transform="rotate(14 700 380)" fill="none" stroke="url(#arc)" stroke-width=".8"/>
+<ellipse cx="700" cy="380" rx="460" ry="153" transform="rotate(27 700 380)" fill="none" stroke="url(#arc)" stroke-width=".8"/>
+<ellipse cx="700" cy="380" rx="478" ry="167" transform="rotate(27 700 380)" fill="none" stroke="url(#arc)" stroke-width=".8"/>
+<ellipse cx="700" cy="380" rx="496" ry="181" transform="rotate(27 700 380)" fill="none" stroke="url(#arc)" stroke-width=".8"/>
+<path d="M700 380 Q473.5 380 247 380" fill="none" stroke="#79b0b0" stroke-width="1" opacity=".4"/><circle cx="247" cy="380" r="17" fill="#102e38" stroke="#648c8d"/><circle cx="247" cy="380" r="4" fill="#c7e9d6"/><text x="247" y="422" text-anchor="middle" font-size="11" letter-spacing="2.3" fill="#a0b9bd" font-family="system-ui,sans-serif">RESOURCES</text>
+<path d="M700 380 Q573.5 170 447 170" fill="none" stroke="#79b0b0" stroke-width="1" opacity=".4"/><circle cx="447" cy="170" r="17" fill="#102e38" stroke="#648c8d"/><circle cx="447" cy="170" r="4" fill="#c7e9d6"/><text x="447" y="212" text-anchor="middle" font-size="11" letter-spacing="2.3" fill="#a0b9bd" font-family="system-ui,sans-serif">APPLICATIONS</text>
+<path d="M700 380 Q829.0 191 958 191" fill="none" stroke="#79b0b0" stroke-width="1" opacity=".4"/><circle cx="958" cy="191" r="17" fill="#102e38" stroke="#648c8d"/><circle cx="958" cy="191" r="4" fill="#c7e9d6"/><text x="958" y="233" text-anchor="middle" font-size="11" letter-spacing="2.3" fill="#a0b9bd" font-family="system-ui,sans-serif">PEOPLE</text>
+<path d="M700 380 Q914.0 421 1128 421" fill="none" stroke="#79b0b0" stroke-width="1" opacity=".4"/><circle cx="1128" cy="421" r="17" fill="#102e38" stroke="#648c8d"/><circle cx="1128" cy="421" r="4" fill="#c7e9d6"/><text x="1128" y="463" text-anchor="middle" font-size="11" letter-spacing="2.3" fill="#a0b9bd" font-family="system-ui,sans-serif">SYSTEMS</text>
+<path d="M700 380 Q625.5 573 551 573" fill="none" stroke="#79b0b0" stroke-width="1" opacity=".4"/><circle cx="551" cy="573" r="17" fill="#102e38" stroke="#648c8d"/><circle cx="551" cy="573" r="4" fill="#c7e9d6"/><text x="551" y="615" text-anchor="middle" font-size="11" letter-spacing="2.3" fill="#a0b9bd" font-family="system-ui,sans-serif">LOCATIONS</text>
+<circle cx="860.00" cy="380.00" r="1.4" fill="#abcbce" opacity=".5"/>
+<circle cx="559.16" cy="465.15" r="1.4" fill="#abcbce" opacity=".5"/>
+<circle cx="719.41" cy="234.04" r="1.4" fill="#abcbce" opacity=".5"/>
+<circle cx="853.94" cy="512.51" r="1.4" fill="#abcbce" opacity=".5"/>
+<circle cx="420.34" cy="347.35" r="1.4" fill="#abcbce" opacity=".5"/>
+<circle cx="965.78" cy="268.41" r="1.4" fill="#abcbce" opacity=".5"/>
+<circle cx="610.18" cy="600.53" r="1.4" fill="#abcbce" opacity=".5"/>
+<circle cx="526.23" cy="159.19" r="1.4" fill="#abcbce" opacity=".5"/>
+<circle cx="1083.25" cy="472.37" r="1.4" fill="#abcbce" opacity=".5"/>
+<circle cx="294.22" cy="490.56" r="1.4" fill="#abcbce" opacity=".5"/>
+<circle cx="899.19" cy="99.04" r="1.4" fill="#abcbce" opacity=".5"/>
+<circle cx="849.96" cy="695.50" r="1.4" fill="#abcbce" opacity=".5"/>
+<circle cx="239.70" cy="203.96" r="1.4" fill="#abcbce" opacity=".5"/>
+<circle cx="859.20" cy="356.90" r="1.4" fill="#abcbce" opacity=".5"/>
+<circle cx="588.43" cy="484.75" r="1.4" fill="#abcbce" opacity=".5"/>
+<circle cx="671.07" cy="232.73" r="1.4" fill="#abcbce" opacity=".5"/>
+<circle cx="895.76" cy="488.88" r="1.4" fill="#abcbce" opacity=".5"/>
+<circle cx="413.25" cy="387.84" r="1.4" fill="#abcbce" opacity=".5"/>
+<circle cx="925.39" cy="231.95" r="1.4" fill="#abcbce" opacity=".5"/>
+<circle cx="683.90" cy="610.09" r="1.4" fill="#abcbce" opacity=".5"/>
+<circle cx="456.51" cy="187.45" r="1.4" fill="#abcbce" opacity=".5"/>
+<circle cx="1107.33" cy="416.15" r="1.4" fill="#abcbce" opacity=".5"/>
+<circle cx="337.20" cy="546.63" r="1.4" fill="#abcbce" opacity=".5"/>
+<circle cx="803.78" cy="75.43" r="1.4" fill="#abcbce" opacity=".5"/>
+<circle cx="950.61" cy="668.60" r="1.4" fill="#abcbce" opacity=".5"/>
+<circle cx="190.30" cy="272.71" r="1.4" fill="#abcbce" opacity=".5"/>
+<circle cx="850.69" cy="334.04" r="1.4" fill="#abcbce" opacity=".5"/>
+<circle cx="623.96" cy="499.94" r="1.4" fill="#abcbce" opacity=".5"/>
+<circle cx="622.81" cy="238.41" r="1.4" fill="#abcbce" opacity=".5"/>
+<circle cx="929.28" cy="459.51" r="1.4" fill="#abcbce" opacity=".5"/>
+<circle cx="419.59" cy="428.80" r="1.4" fill="#abcbce" opacity=".5"/>
+<circle cx="873.58" cy="201.79" r="1.4" fill="#abcbce" opacity=".5"/>
+<circle cx="759.66" cy="608.96" r="1.4" fill="#abcbce" opacity=".5"/>
+<circle cx="397.17" cy="225.24" r="1.4" fill="#abcbce" opacity=".5"/>
+<circle cx="1112.58" cy="357.41" r="1.4" fill="#abcbce" opacity=".5"/>
+<circle cx="397.85" cy="595.62" r="1.4" fill="#abcbce" opacity=".5"/>
+<circle cx="702.27" cy="65.84" r="1.4" fill="#abcbce" opacity=".5"/>
+<circle cx="1040.69" cy="627.81" r="1.4" fill="#abcbce" opacity=".5"/>
+<circle cx="164.29" cy="347.28" r="1.4" fill="#abcbce" opacity=".5"/>
+<circle cx="834.61" cy="312.56" r="1.4" fill="#abcbce" opacity=".5"/>
+<circle cx="664.23" cy="509.87" r="1.4" fill="#abcbce" opacity=".5"/>
+<circle cx="576.94" cy="250.97" r="1.4" fill="#abcbce" opacity=".5"/>
+<circle cx="700" cy="380" r="101" fill="none" stroke="#b4ded4" stroke-opacity=".13"/><circle cx="700" cy="380" r="80" fill="none" stroke="#b4ded4" stroke-opacity=".25"/><circle cx="700" cy="380" r="59" fill="url(#pearl)"/>
+<g transform="translate(700 387) scale(1.05)" fill="none" stroke="#174f57" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M-14-10 0-18 14-10 14 7 0 15-14 7Z M-14-10 0-2 14-10 M0-2V15 M0-18V-27 M14 7 23 12 M-14 7-23 12"/><circle cx="0" cy="-30" r="3"/><circle cx="26" cy="14" r="3"/><circle cx="-26" cy="14" r="3"/></g>
+<text x="700" y="506" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" letter-spacing="4" fill="#a6d3ca">HUBUUM</text>
+</svg>

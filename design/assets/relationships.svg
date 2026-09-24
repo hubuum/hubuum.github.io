@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 550" role="img" aria-labelledby="title"><title id="title">Example model: the Atlas application runs on web-01, located in Oslo, and is owned by the Platform team</title>
+    <defs><radialGradient id="wash"><stop stop-color="#61988f" stop-opacity=".2"/><stop offset="1" stop-color="#61988f" stop-opacity="0"/></radialGradient></defs>
+    <circle cx="400" cy="280" r="270" fill="url(#wash)"/>
+    <g fill="none" stroke="#75a59d" stroke-width="1.2"><path d="M250 155C400 155 400 155 550 155 M550 185C550 310 400 275 400 400"/></g>
+    <g font-family="system-ui,sans-serif" text-anchor="middle"><g fill="#bdd4ce" font-size="12"><text x="400" y="136">runs on</text><text x="549" y="294">located in</text><text x="235" y="301">owned by</text></g>
+    <g fill="#102f36" stroke="#577b79"><rect x="135" y="104" width="230" height="103" rx="9"/><rect x="435" y="104" width="230" height="103" rx="9"/><rect x="285" y="357" width="230" height="103" rx="9"/><rect x="62" y="357" width="174" height="83" rx="9"/></g>
+    <g fill="#b6cfc9" font-size="10" letter-spacing="2"><text x="250" y="135">APPLICATION</text><text x="550" y="135">SERVER</text><text x="400" y="389">LOCATION</text><text x="149" y="387">TEAM</text></g>
+    <g fill="#f1f5ee" font-size="25"><text x="250" y="175">Atlas</text><text x="550" y="175">web-01</text><text x="400" y="429">Oslo</text><text x="149" y="419" font-size="20">Platform</text></g></g>
+    <path d="M250 207C250 275 149 290 149 357" fill="none" stroke="#75a59d" stroke-width="1.2"/>
+    </svg>

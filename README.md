@@ -8,6 +8,12 @@ versioned documentation. It shares the theme and publishing tools from
 [hubuum/.github](https://github.com/hubuum/.github), pinned in
 `.github/docs-tools.env` and the documentation workflow.
 
+## Landing page design studies
+
+Explore the [three connected landing page drafts](design/README.md) and their
+desktop and mobile screenshots. These standalone studies live outside the
+published documentation while a visual direction is selected.
+
 ## Preview
 
 Requirements: Python 3.11+, Git, Bash, and Docker.
