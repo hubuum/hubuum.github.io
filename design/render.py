@@ -10,21 +10,20 @@ import sys
 ROOT = Path(__file__).resolve().parent
 HEADLINE = "Your CMDB.<br>Your data. <em>Your model.</em>"
 DESCRIPTION = (
-    "Manage authoritative records alongside data from other systems. "
-    "Enforce schemas where you need them, let data evolve freely where you don’t, "
-    "and connect objects through meaningful relationships."
+    "Authoritative and reference data, together. Define classes, choose schemas "
+    "or stay schema-free, and connect your objects."
 )
 CONCEPTS = [
     dict(slug="confluence", number="01", name="Confluence", mood="Fluid · spacious · connected",
-         idea="Structured and free-form records meet in flowing currents around a shared CMDB. An airy, understated home for the data you own and bring together.",
+         idea="Flowing currents bring structured and free-form records into a shared CMDB. Calm, open, and connected.",
          caption="Different data. A shared CMDB.",
          theme="Warm white, deep teal, and softly coloured currents."),
     dict(slug="orbit", number="02", name="Orbit", mood="Luminous · precise · centred",
-         idea="A luminous CMDB holds a constellation of structured and free-form records. Data from different sources shares a centre without losing its individuality.",
+         idea="A luminous hub connects records from different sources. One CMDB at the centre of your world.",
          caption="Your data. Other sources. One connected model.",
          theme="Midnight blue, luminous mint, and quiet orbital geometry."),
     dict(slug="fabric", number="03", name="Fabric", mood="Architectural · layered · open",
-         idea="Defined grids and open records inhabit translucent connected layers. An architectural CMDB where schema-bound and schema-free data coexist.",
+         idea="Translucent layers connect defined grids and open records. Structure and freedom, on a common foundation.",
          caption="Structure and freedom. On a common foundation.",
          theme="Soft ivory, ink, teal, and architectural blue."),
 ]

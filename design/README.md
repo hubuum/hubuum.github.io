@@ -34,6 +34,10 @@ preview or the screenshots below to see the designs.
 - The balance of abstract imagery and concrete resource examples.
 - Which typography, colours, and overall feeling best fit the project.
 
+The studies use concise copy and body text enlarged by 25% through the shared
+`--body-text-scale` setting. Example cards stack earlier on smaller screens to
+give the larger text room.
+
 Each study opens with **Your CMDB. Your data. Your model.** The scrolling story
 introduces the kinds of data you can manage, authoritative records and upstream
 reference data, schema-bound and schema-free classes, relations, and the ecosystem.
