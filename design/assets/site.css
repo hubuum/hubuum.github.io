@@ -390,7 +390,7 @@ h1 { font-size: clamp(3.4rem, 5.4vw, 5.2rem); line-height: 1.055; }
   .figure-caption { font-size: 8px; margin-top: 0; }
   .model-panel { min-height: 345px; }
   .model-panel h3 { font-size: 29px; }
-  .model-tabs { gap: 35px; margin-bottom: 25px; }
+  .model-tabs { gap: clamp(14px, 5vw, 25px); margin-bottom: 25px; }
   .example-detail { grid-template-columns: 65px 1fr; font-size: 11px; }
   .ecosystem-heading { display: block; margin-bottom: 35px; }
   .ecosystem-heading > p { max-width: none; margin-top: 24px; font-size: 13px; }

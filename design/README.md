@@ -39,7 +39,9 @@ introduces the kinds of data you can manage, authoritative records and upstream
 reference data, schema-bound and schema-free classes, relations, and the ecosystem.
 Authority and structure are independent choices: both schema approaches can hold
 either kind of data. The example model illustrates all four combinations.
-The Objects / Relations / Access controls work with a mouse, touch, or arrow keys.
+The Classes / Objects / Relations / Access controls work with a mouse, touch, or arrow keys.
+Classes define resource types and their schema policy; objects are instances of
+those classes, with their own JSON data.
 The content is readable without JavaScript, and reduced-motion preferences
 disable the short entrance effects. There is no scroll interception.
 
