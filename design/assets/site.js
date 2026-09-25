@@ -36,5 +36,5 @@ if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: re
       }
     });
   }, { threshold: 0.16 });
-  document.querySelectorAll('.source-flow, .model-figure, .ecosystem-grid').forEach((element) => observer.observe(element));
+  document.querySelectorAll('.authority-grid, .schema-grid, .model-figure, .ecosystem-grid').forEach((element) => observer.observe(element));
 }

@@ -28,18 +28,25 @@ preview or the screenshots below to see the designs.
 
 ## What to compare
 
-- How clearly the opening imagery communicates Hubuum as the shared centre.
+- How clearly the opening presents Hubuum as a flexible CMDB.
+- Equal emphasis on authoritative/reference data, schema choices, and relations.
 - The transition from the opening promise into the product explanation.
 - The balance of abstract imagery and concrete resource examples.
 - Which typography, colours, and overall feeling best fit the project.
 
-Each study tells the same scrolling story: independent sources, a common model,
-useful relationships, intentional access, and the ecosystem of interfaces.
-The Model / Connect / Use controls work with a mouse, touch, or arrow keys.
+Each study opens with **Your CMDB. Your data. Your model.** The scrolling story
+introduces the kinds of data you can manage, authoritative records and upstream
+reference data, schema-bound and schema-free classes, relations, and the ecosystem.
+Authority and structure are independent choices: both schema approaches can hold
+either kind of data. The example model illustrates all four combinations.
+The Objects / Relations / Access controls work with a mouse, touch, or arrow keys.
 The content is readable without JavaScript, and reduced-motion preferences
 disable the short entrance effects. There is no scroll interception.
 
 The network illustrations and small hub symbol are original SVG explorations.
+Defined record grids and open record outlines represent schema-bound and
+schema-free content. Source labels in the example diagram describe the ownership
+chosen for those examples; they are not screenshots of provenance features.
 They illustrate concepts; they do not imply an existing graph UI, automatic
 discovery, or built-in source synchronisation. The copy explicitly assigns
 collection and refresh to the user's integrations. Product links lead to the
