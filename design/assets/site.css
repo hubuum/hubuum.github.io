@@ -116,6 +116,7 @@ h1 { font-size: clamp(3.4rem, 5.4vw, 5.2rem); line-height: 1.055; }
 .schema-card-heading .eyebrow { font-size: 9px; }
 .schema-card h3 { font-size: 25px; margin-top: 9px; }
 .schema-card > p { margin-top: 22px; font-size: calc(14px * var(--body-text-scale)); color: var(--muted); min-height: 3.5em; }
+.schema-card > p a { color: var(--accent); text-decoration: underline; text-underline-offset: .2em; }
 .record-example { margin-top: 26px; background: #fffefb; border: 1px solid #d4ddd3; min-height: 241px; }
 .record-title { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; border-bottom: 1px solid #dae2d8; padding: 16px 19px; }
 .record-title strong { font-size: calc(12px * var(--body-text-scale)); font-weight: 550; }
@@ -125,7 +126,7 @@ h1 { font-size: clamp(3.4rem, 5.4vw, 5.2rem); line-height: 1.055; }
 .record-example dl > div:last-child { border: 0; }
 .record-example dt { font-size: calc(12px * var(--body-text-scale)); }
 .record-example dt span { display: block; font-size: calc(9px * var(--body-text-scale)); color: #6d7c70; margin-top: 3px; }
-.record-example dd { margin: 0; font-family: ui-monospace, monospace; font-size: calc(12px * var(--body-text-scale)); }
+.record-example dd { margin: 0; min-width: 0; max-width: 58%; overflow-wrap: anywhere; text-align: right; font-family: ui-monospace, monospace; font-size: calc(12px * var(--body-text-scale)); }
 .record-example pre { margin: 0; padding: 25px 19px; white-space: pre-wrap; overflow-wrap: anywhere; line-height: 1.9; font-size: calc(12px * var(--body-text-scale)); }
 .record-example code { font-family: ui-monospace, monospace; }
 .schema-common { text-align: center; font-size: calc(13px * var(--body-text-scale)); line-height: 1.9; margin-top: 35px; color: var(--muted); }

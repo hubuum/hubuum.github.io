@@ -43,6 +43,9 @@ introduces the kinds of data you can manage, authoritative records and upstream
 reference data, schema-bound and schema-free classes, relations, and the ecosystem.
 Authority and structure are independent choices: both schema approaches can hold
 either kind of data. The example model illustrates all four combinations.
+The schema-bound Atlas card demonstrates strings, integers, decimal numbers,
+booleans, arrays, and nested objects from the shared corpus, with a link to the
+[JSON Schema specification](https://json-schema.org/specification).
 The Classes / Objects / Relations / Access controls work with a mouse, touch, or arrow keys.
 Classes define resource types and their schema policy; objects are instances of
 those classes, with their own JSON data.
