@@ -180,4 +180,13 @@ body:has(.md-content table) .md-grid {
   color: var(--light-ink);
   background-color: #ffffff12;
 }
-.md-search__button:hover { background-color: #ffffff20; }
+.md-search__button:hover,
+.md-search__button:focus {
+  color: var(--light-ink);
+  background-color: #ffffff20;
+}
+.md-search__button::before { background-color: var(--light-ink); }
+.md-search__button::after {
+  color: var(--light-ink);
+  background-color: #00000040;
+}
