@@ -1,6 +1,6 @@
 [project]
 site_name = "Hubuum"
-site_description = "Connected operational data, with a server, web console, CLI, and typed Rust and Python clients."
+site_description = "A flexible, open-source CMDB for authoritative and reference data, schema-bound or schema-free, connected through relations."
 site_url = "https://hubuum.github.io/"
 repo_url = "https://github.com/hubuum/hubuum.github.io"
 repo_name = "hubuum/hubuum.github.io"
@@ -12,5 +12,11 @@ nav = [
   { "Community" = "community.md" },
 ]
 
+[project.theme]
+# Normal page loads support the standalone homepage and the documentation shell.
+features = ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.path", "navigation.top", "navigation.footer", "content.action.edit", "content.code.copy", "toc.follow"]
+favicon = "assets/landing/favicon-orbit.svg"
+
 [tool.hubuum_docs]
 versioned = false
+theme_overrides = "overrides"
