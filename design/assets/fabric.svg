@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 900" role="img" aria-labelledby="title"><title id="title">Defined and open records coexist in the connected layers of a Hubuum CMDB</title>
+<defs>
+    <linearGradient id="plane" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#b1cac9" stop-opacity=".07"/><stop offset=".55" stop-color="#aacbdb" stop-opacity=".25"/><stop offset="1" stop-color="#e0cba8" stop-opacity=".25"/></linearGradient>
+    <linearGradient id="tile" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fffdf7"/><stop offset="1" stop-color="#d9e5e6"/></linearGradient>
+    </defs>
+<g transform="translate(0 0)"><path d="M500 135 925 340 500 545 75 340Z" fill="url(#plane)" stroke="#6d969e" stroke-opacity=".28"/>
+<path d="M461.36 153.64 886.36 358.64 M538.64 153.64 113.64 358.64" stroke="#5d909d" stroke-width=".7" opacity=".16" fill="none"/>
+<path d="M422.73 172.27 847.73 377.27 M577.27 172.27 152.27 377.27" stroke="#5d909d" stroke-width=".7" opacity=".16" fill="none"/>
+<path d="M384.09 190.91 809.09 395.91 M615.91 190.91 190.91 395.91" stroke="#5d909d" stroke-width=".7" opacity=".16" fill="none"/>
+<path d="M345.45 209.55 770.45 414.55 M654.55 209.55 229.55 414.55" stroke="#5d909d" stroke-width=".7" opacity=".16" fill="none"/>
+<path d="M306.82 228.18 731.82 433.18 M693.18 228.18 268.18 433.18" stroke="#5d909d" stroke-width=".7" opacity=".16" fill="none"/>
+<path d="M268.18 246.82 693.18 451.82 M731.82 246.82 306.82 451.82" stroke="#5d909d" stroke-width=".7" opacity=".16" fill="none"/>
+<path d="M229.55 265.45 654.55 470.45 M770.45 265.45 345.45 470.45" stroke="#5d909d" stroke-width=".7" opacity=".16" fill="none"/>
+<path d="M190.91 284.09 615.91 489.09 M809.09 284.09 384.09 489.09" stroke="#5d909d" stroke-width=".7" opacity=".16" fill="none"/>
+<path d="M152.27 302.73 577.27 507.73 M847.73 302.73 422.73 507.73" stroke="#5d909d" stroke-width=".7" opacity=".16" fill="none"/>
+<path d="M113.64 321.36 538.64 526.36 M886.36 321.36 461.36 526.36" stroke="#5d909d" stroke-width=".7" opacity=".16" fill="none"/>
+</g>
+<g transform="translate(0 110)"><path d="M500 135 925 340 500 545 75 340Z" fill="url(#plane)" stroke="#6d969e" stroke-opacity=".28"/>
+<path d="M461.36 153.64 886.36 358.64 M538.64 153.64 113.64 358.64" stroke="#5d909d" stroke-width=".7" opacity=".16" fill="none"/>
+<path d="M422.73 172.27 847.73 377.27 M577.27 172.27 152.27 377.27" stroke="#5d909d" stroke-width=".7" opacity=".16" fill="none"/>
+<path d="M384.09 190.91 809.09 395.91 M615.91 190.91 190.91 395.91" stroke="#5d909d" stroke-width=".7" opacity=".16" fill="none"/>
+<path d="M345.45 209.55 770.45 414.55 M654.55 209.55 229.55 414.55" stroke="#5d909d" stroke-width=".7" opacity=".16" fill="none"/>
+<path d="M306.82 228.18 731.82 433.18 M693.18 228.18 268.18 433.18" stroke="#5d909d" stroke-width=".7" opacity=".16" fill="none"/>
+<path d="M268.18 246.82 693.18 451.82 M731.82 246.82 306.82 451.82" stroke="#5d909d" stroke-width=".7" opacity=".16" fill="none"/>
+<path d="M229.55 265.45 654.55 470.45 M770.45 265.45 345.45 470.45" stroke="#5d909d" stroke-width=".7" opacity=".16" fill="none"/>
+<path d="M190.91 284.09 615.91 489.09 M809.09 284.09 384.09 489.09" stroke="#5d909d" stroke-width=".7" opacity=".16" fill="none"/>
+<path d="M152.27 302.73 577.27 507.73 M847.73 302.73 422.73 507.73" stroke="#5d909d" stroke-width=".7" opacity=".16" fill="none"/>
+<path d="M113.64 321.36 538.64 526.36 M886.36 321.36 461.36 526.36" stroke="#5d909d" stroke-width=".7" opacity=".16" fill="none"/>
+</g>
+<g transform="translate(0 220)"><path d="M500 135 925 340 500 545 75 340Z" fill="url(#plane)" stroke="#6d969e" stroke-opacity=".28"/>
+<path d="M461.36 153.64 886.36 358.64 M538.64 153.64 113.64 358.64" stroke="#5d909d" stroke-width=".7" opacity=".16" fill="none"/>
+<path d="M422.73 172.27 847.73 377.27 M577.27 172.27 152.27 377.27" stroke="#5d909d" stroke-width=".7" opacity=".16" fill="none"/>
+<path d="M384.09 190.91 809.09 395.91 M615.91 190.91 190.91 395.91" stroke="#5d909d" stroke-width=".7" opacity=".16" fill="none"/>
+<path d="M345.45 209.55 770.45 414.55 M654.55 209.55 229.55 414.55" stroke="#5d909d" stroke-width=".7" opacity=".16" fill="none"/>
+<path d="M306.82 228.18 731.82 433.18 M693.18 228.18 268.18 433.18" stroke="#5d909d" stroke-width=".7" opacity=".16" fill="none"/>
+<path d="M268.18 246.82 693.18 451.82 M731.82 246.82 306.82 451.82" stroke="#5d909d" stroke-width=".7" opacity=".16" fill="none"/>
+<path d="M229.55 265.45 654.55 470.45 M770.45 265.45 345.45 470.45" stroke="#5d909d" stroke-width=".7" opacity=".16" fill="none"/>
+<path d="M190.91 284.09 615.91 489.09 M809.09 284.09 384.09 489.09" stroke="#5d909d" stroke-width=".7" opacity=".16" fill="none"/>
+<path d="M152.27 302.73 577.27 507.73 M847.73 302.73 422.73 507.73" stroke="#5d909d" stroke-width=".7" opacity=".16" fill="none"/>
+<path d="M113.64 321.36 538.64 526.36 M886.36 321.36 461.36 526.36" stroke="#5d909d" stroke-width=".7" opacity=".16" fill="none"/>
+</g>
+<path d="M265 337V557" stroke="#4b7a8a" stroke-dasharray="3 6" opacity=".45"/><g transform="translate(265 337) scale(0.7)"><rect x="-24" y="-24" width="48" height="48" rx="8" fill="#f5f8f2"/><g fill="none" stroke="#4b7f80" stroke-width="1.15"><rect x="-24" y="-24" width="48" height="48" rx="5"/><path d="M-14-11H14 M-14 0H14 M-14 11H14 M-5-15V15"/></g></g><circle cx="265" cy="557" r="3" fill="#47798b"/>
+<path d="M736 340V562" stroke="#4b7a8a" stroke-dasharray="3 6" opacity=".45"/><g transform="translate(736 340) scale(0.7)"><rect x="-24" y="-24" width="48" height="48" rx="8" fill="#f5f8f2"/><g fill="none" stroke="#4b7f80" stroke-width="1.15"><path d="M-24-9V-19Q-24-24-19-24H-9 M9-24H19Q24-24 24-19V-9 M24 9V19Q24 24 19 24H9 M-9 24H-19Q-24 24-24 19V9"/><path d="M-14-11H12 M-8 0H6 M-14 11H16"/><circle cx="13" cy="0" r="1.5"/></g></g><circle cx="736" cy="562" r="3" fill="#47798b"/>
+<path d="M502 170V390" stroke="#4b7a8a" stroke-dasharray="3 6" opacity=".45"/><g transform="translate(502 170) scale(0.7)"><rect x="-24" y="-24" width="48" height="48" rx="8" fill="#f5f8f2"/><g fill="none" stroke="#4b7f80" stroke-width="1.15"><rect x="-24" y="-24" width="48" height="48" rx="5"/><path d="M-14-11H14 M-14 0H14 M-14 11H14 M-5-15V15"/></g></g><circle cx="502" cy="390" r="3" fill="#47798b"/>
+<path d="M498 510V730" stroke="#4b7a8a" stroke-dasharray="3 6" opacity=".45"/><g transform="translate(498 510) scale(0.7)"><rect x="-24" y="-24" width="48" height="48" rx="8" fill="#f5f8f2"/><g fill="none" stroke="#4b7f80" stroke-width="1.15"><path d="M-24-9V-19Q-24-24-19-24H-9 M9-24H19Q24-24 24-19V-9 M24 9V19Q24 24 19 24H9 M-9 24H-19Q-24 24-24 19V9"/><path d="M-14-11H12 M-8 0H6 M-14 11H16"/><circle cx="13" cy="0" r="1.5"/></g></g><circle cx="498" cy="730" r="3" fill="#47798b"/>
+<path d="M500 340 610 393 500 446 390 393Z" fill="#286473" opacity=".13"/><path d="M500 305 610 358 500 411 390 358Z" fill="url(#tile)" stroke="white" stroke-width="1.5"/><path d="M390 358V375L500 428 610 375V358L500 411Z" fill="#b9d0d2" opacity=".7"/>
+<g transform="translate(500 364) scale(0.9)" fill="none" stroke="#174f57" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M-14-10 0-18 14-10 14 7 0 15-14 7Z M-14-10 0-2 14-10 M0-2V15 M0-18V-27 M14 7 23 12 M-14 7-23 12"/><circle cx="0" cy="-30" r="3"/><circle cx="26" cy="14" r="3"/><circle cx="-26" cy="14" r="3"/></g>
+<path d="M500 195V293 M500 435V631 M260 355 379 355 M623 355 742 355" fill="none" stroke="#386988" stroke-width="1.5"/><text x="650" y="445" font-family="system-ui,sans-serif" font-size="11" letter-spacing="3" fill="#345969">HUBUUM</text>
+</svg>

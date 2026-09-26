@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 850" role="img" aria-labelledby="title"><title id="title">Schema-bound and schema-free records flow into a common Hubuum CMDB</title>
+<defs>
+    <radialGradient id="halo"><stop stop-color="#88c9c1" stop-opacity=".38"/><stop offset="1" stop-color="#88c9c1" stop-opacity="0"/></radialGradient>
+    <linearGradient id="thread" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#9fb9d4"/><stop offset=".48" stop-color="#357b80"/><stop offset="1" stop-color="#c1b093"/></linearGradient>
+    <radialGradient id="pearl" cx=".3" cy=".2"><stop stop-color="white"/><stop offset="1" stop-color="#dbece8"/></radialGradient>
+    <filter id="shadow" x="-100%" y="-100%" width="300%" height="300%"><feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#174f57" flood-opacity=".13"/></filter>
+    </defs><circle cx="515" cy="425" r="280" fill="url(#halo)"/>
+<path d="M80 -20 C940 25, 10 800, 830 880" fill="none" stroke="url(#thread)" stroke-width="0.70" opacity="0.14"/>
+<path d="M84 -20 C935 34, 18 792, 836 880" fill="none" stroke="url(#thread)" stroke-width="0.72" opacity="0.15"/>
+<path d="M88 -20 C930 43, 26 784, 842 880" fill="none" stroke="url(#thread)" stroke-width="0.74" opacity="0.17"/>
+<path d="M92 -20 C925 52, 34 776, 848 880" fill="none" stroke="url(#thread)" stroke-width="0.76" opacity="0.18"/>
+<path d="M96 -20 C920 61, 42 768, 854 880" fill="none" stroke="url(#thread)" stroke-width="0.78" opacity="0.20"/>
+<path d="M100 -20 C915 70, 50 760, 860 880" fill="none" stroke="url(#thread)" stroke-width="0.80" opacity="0.21"/>
+<path d="M104 -20 C910 79, 58 752, 866 880" fill="none" stroke="url(#thread)" stroke-width="0.82" opacity="0.23"/>
+<path d="M108 -20 C905 88, 66 744, 872 880" fill="none" stroke="url(#thread)" stroke-width="0.84" opacity="0.24"/>
+<path d="M112 -20 C900 97, 74 736, 878 880" fill="none" stroke="url(#thread)" stroke-width="0.87" opacity="0.26"/>
+<path d="M116 -20 C895 106, 82 728, 884 880" fill="none" stroke="url(#thread)" stroke-width="0.89" opacity="0.27"/>
+<path d="M120 -20 C890 115, 90 720, 890 880" fill="none" stroke="url(#thread)" stroke-width="0.91" opacity="0.28"/>
+<path d="M124 -20 C885 124, 98 712, 896 880" fill="none" stroke="url(#thread)" stroke-width="0.93" opacity="0.30"/>
+<path d="M128 -20 C880 133, 106 704, 902 880" fill="none" stroke="url(#thread)" stroke-width="0.95" opacity="0.31"/>
+<path d="M132 -20 C875 142, 114 696, 908 880" fill="none" stroke="url(#thread)" stroke-width="0.97" opacity="0.33"/>
+<path d="M136 -20 C870 151, 122 688, 914 880" fill="none" stroke="url(#thread)" stroke-width="0.99" opacity="0.34"/>
+<path d="M140 -20 C865 160, 130 680, 920 880" fill="none" stroke="url(#thread)" stroke-width="1.01" opacity="0.36"/>
+<path d="M144 -20 C860 169, 138 672, 926 880" fill="none" stroke="url(#thread)" stroke-width="1.03" opacity="0.37"/>
+<path d="M148 -20 C855 178, 146 664, 932 880" fill="none" stroke="url(#thread)" stroke-width="1.05" opacity="0.39"/>
+<path d="M152 -20 C850 187, 154 656, 938 880" fill="none" stroke="url(#thread)" stroke-width="1.07" opacity="0.40"/>
+<path d="M156 -20 C845 196, 162 648, 944 880" fill="none" stroke="url(#thread)" stroke-width="1.09" opacity="0.42"/>
+<path d="M160 -20 C840 205, 170 640, 950 880" fill="none" stroke="url(#thread)" stroke-width="1.11" opacity="0.43"/>
+<path d="M164 -20 C835 214, 178 632, 956 880" fill="none" stroke="url(#thread)" stroke-width="1.13" opacity="0.44"/>
+<path d="M168 -20 C830 223, 186 624, 962 880" fill="none" stroke="url(#thread)" stroke-width="1.16" opacity="0.46"/>
+<path d="M172 -20 C825 232, 194 616, 968 880" fill="none" stroke="url(#thread)" stroke-width="1.18" opacity="0.47"/>
+<path d="M176 -20 C820 241, 202 608, 974 880" fill="none" stroke="url(#thread)" stroke-width="1.20" opacity="0.49"/>
+<path d="M180 -20 C815 250, 210 600, 980 880" fill="none" stroke="url(#thread)" stroke-width="1.22" opacity="0.50"/>
+<path d="M184 -20 C810 259, 218 592, 986 880" fill="none" stroke="url(#thread)" stroke-width="1.24" opacity="0.52"/>
+<path d="M188 -20 C805 268, 226 584, 992 880" fill="none" stroke="url(#thread)" stroke-width="1.26" opacity="0.53"/>
+<path d="M192 -20 C800 277, 234 576, 998 880" fill="none" stroke="url(#thread)" stroke-width="1.28" opacity="0.55"/>
+<path d="M196 -20 C795 286, 242 568, 1004 880" fill="none" stroke="url(#thread)" stroke-width="1.30" opacity="0.56"/>
+<path d="M-20 180 C320 180, 340 690, 1020 570" fill="none" stroke="#508c87" stroke-width=".85" opacity="0.130"/>
+<path d="M-20 195 C320 192, 340 678, 1020 578" fill="none" stroke="#508c87" stroke-width=".85" opacity="0.145"/>
+<path d="M-20 210 C320 204, 340 666, 1020 586" fill="none" stroke="#508c87" stroke-width=".85" opacity="0.160"/>
+<path d="M-20 225 C320 216, 340 654, 1020 594" fill="none" stroke="#508c87" stroke-width=".85" opacity="0.175"/>
+<path d="M-20 240 C320 228, 340 642, 1020 602" fill="none" stroke="#508c87" stroke-width=".85" opacity="0.190"/>
+<path d="M-20 255 C320 240, 340 630, 1020 610" fill="none" stroke="#508c87" stroke-width=".85" opacity="0.205"/>
+<path d="M-20 270 C320 252, 340 618, 1020 618" fill="none" stroke="#508c87" stroke-width=".85" opacity="0.220"/>
+<path d="M-20 285 C320 264, 340 606, 1020 626" fill="none" stroke="#508c87" stroke-width=".85" opacity="0.235"/>
+<path d="M-20 300 C320 276, 340 594, 1020 634" fill="none" stroke="#508c87" stroke-width=".85" opacity="0.250"/>
+<path d="M-20 315 C320 288, 340 582, 1020 642" fill="none" stroke="#508c87" stroke-width=".85" opacity="0.265"/>
+<path d="M-20 330 C320 300, 340 570, 1020 650" fill="none" stroke="#508c87" stroke-width=".85" opacity="0.280"/>
+<path d="M-20 345 C320 312, 340 558, 1020 658" fill="none" stroke="#508c87" stroke-width=".85" opacity="0.295"/>
+<path d="M-20 360 C320 324, 340 546, 1020 666" fill="none" stroke="#508c87" stroke-width=".85" opacity="0.310"/>
+<path d="M-20 375 C320 336, 340 534, 1020 674" fill="none" stroke="#508c87" stroke-width=".85" opacity="0.325"/>
+<path d="M-20 390 C320 348, 340 522, 1020 682" fill="none" stroke="#508c87" stroke-width=".85" opacity="0.340"/>
+<g transform="translate(283 152) scale(0.85)"><rect x="-24" y="-24" width="48" height="48" rx="8" fill="#f5f8f2"/><g fill="none" stroke="#4b7f80" stroke-width="1.15"><rect x="-24" y="-24" width="48" height="48" rx="5"/><path d="M-14-11H14 M-14 0H14 M-14 11H14 M-5-15V15"/></g></g>
+<g transform="translate(766 650) scale(0.85)"><rect x="-24" y="-24" width="48" height="48" rx="8" fill="#f5f8f2"/><g fill="none" stroke="#4b7f80" stroke-width="1.15"><path d="M-24-9V-19Q-24-24-19-24H-9 M9-24H19Q24-24 24-19V-9 M24 9V19Q24 24 19 24H9 M-9 24H-19Q-24 24-24 19V9"/><path d="M-14-11H12 M-8 0H6 M-14 11H16"/><circle cx="13" cy="0" r="1.5"/></g></g>
+<g transform="translate(189 343) scale(0.85)"><rect x="-24" y="-24" width="48" height="48" rx="8" fill="#f5f8f2"/><g fill="none" stroke="#4b7f80" stroke-width="1.15"><rect x="-24" y="-24" width="48" height="48" rx="5"/><path d="M-14-11H14 M-14 0H14 M-14 11H14 M-5-15V15"/></g></g>
+<g transform="translate(808 552) scale(0.85)"><rect x="-24" y="-24" width="48" height="48" rx="8" fill="#f5f8f2"/><g fill="none" stroke="#4b7f80" stroke-width="1.15"><path d="M-24-9V-19Q-24-24-19-24H-9 M9-24H19Q24-24 24-19V-9 M24 9V19Q24 24 19 24H9 M-9 24H-19Q-24 24-24 19V9"/><path d="M-14-11H12 M-8 0H6 M-14 11H16"/><circle cx="13" cy="0" r="1.5"/></g></g>
+<g transform="translate(692 165) scale(0.85)"><rect x="-24" y="-24" width="48" height="48" rx="8" fill="#f5f8f2"/><g fill="none" stroke="#4b7f80" stroke-width="1.15"><rect x="-24" y="-24" width="48" height="48" rx="5"/><path d="M-14-11H14 M-14 0H14 M-14 11H14 M-5-15V15"/></g></g>
+<g transform="translate(364 675) scale(0.85)"><rect x="-24" y="-24" width="48" height="48" rx="8" fill="#f5f8f2"/><g fill="none" stroke="#4b7f80" stroke-width="1.15"><path d="M-24-9V-19Q-24-24-19-24H-9 M9-24H19Q24-24 24-19V-9 M24 9V19Q24 24 19 24H9 M-9 24H-19Q-24 24-24 19V9"/><path d="M-14-11H12 M-8 0H6 M-14 11H16"/><circle cx="13" cy="0" r="1.5"/></g></g>
+<circle cx="515" cy="425" r="90" fill="none" stroke="#79a8a1" stroke-opacity=".25"/><circle cx="515" cy="425" r="66" fill="url(#pearl)" stroke="white" stroke-width="2" filter="url(#shadow)"/>
+<g transform="translate(515 432) scale(1.25)" fill="none" stroke="#174f57" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M-14-10 0-18 14-10 14 7 0 15-14 7Z M-14-10 0-2 14-10 M0-2V15 M0-18V-27 M14 7 23 12 M-14 7-23 12"/><circle cx="0" cy="-30" r="3"/><circle cx="26" cy="14" r="3"/><circle cx="-26" cy="14" r="3"/></g>
+<text x="515" y="534" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" letter-spacing="4" fill="#426866">HUBUUM</text>
+</svg>

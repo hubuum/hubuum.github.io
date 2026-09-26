@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 580" role="img" aria-labelledby="title"><title id="title">Example CMDB: schema-bound Atlas and web-01 connect to schema-free research notes and Oslo; authority lives in Hubuum or upstream independently of schema choice</title>
+    <defs><radialGradient id="wash"><stop stop-color="#61988f" stop-opacity=".2"/><stop offset="1" stop-color="#61988f" stop-opacity="0"/></radialGradient></defs>
+    <circle cx="400" cy="280" r="270" fill="url(#wash)"/>
+    <g fill="none" stroke="#75a59d" stroke-width="1.2"><path d="M350 172H450 M235 250C235 300 210 300 210 350 M570 250C570 300 595 300 595 350"/></g>
+    <g font-family="system-ui,sans-serif" text-anchor="middle">
+    <g fill="#bdd4ce" font-size="13"><text x="400" y="154">runs on</text><text x="642" y="307">located in</text><text x="154" y="307">described by</text></g>
+    <g fill="#102f36" stroke="#779c95"><rect x="105" y="90" width="245" height="160" rx="5"/><rect x="450" y="90" width="245" height="160" rx="5"/></g>
+    <g fill="#102f36" stroke="#779c95" stroke-dasharray="5 6"><rect x="85" y="350" width="250" height="160" rx="16"/><rect x="460" y="350" width="250" height="160" rx="16"/></g>
+    <g fill="#b6cfc9" font-size="11" letter-spacing="2"><text x="228" y="121">SERVICE</text><text x="573" y="121">SERVER</text><text x="210" y="382">CONTEXT</text><text x="585" y="382">LOCATION</text></g>
+    <g fill="#f1f5ee" font-size="27"><text x="228" y="165">Atlas</text><text x="573" y="165">web-01</text><text x="210" y="425" font-size="23">Research notes</text><text x="585" y="425">Oslo</text></g>
+    <g fill="#c2d9cd" font-size="13"><text x="228" y="204">Schema-bound</text><text x="573" y="204">Schema-bound</text><text x="210" y="465">Schema-free</text><text x="585" y="465">Schema-free</text></g>
+    <g fill="#9fbab4" font-size="11"><text x="228" y="229">Authority: Hubuum</text><text x="573" y="229">Authority: upstream</text><text x="210" y="490">Authority: Hubuum</text><text x="585" y="490">Authority: upstream</text></g></g>
+    </svg>

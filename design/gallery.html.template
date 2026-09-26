@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow"><title>Hubuum — Connected landing page studies</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="assets/site.css">
+</head>
+<body class="gallery">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="container gallery-header"><a class="brand" href="index.html">$symbol<span>hubuum</span></a><span class="eyebrow">Design studies / September 2026</span><a class="text-link" href="https://hubuum.github.io/">Current website ↗</a></header>
+  <main class="container" id="main">
+    <section class="gallery-intro"><p class="eyebrow">A flexible CMDB. Three perspectives.</p><h1>Your CMDB. Your data.<br><em>Your model.</em></h1><p>Three directions. One story: authoritative and reference data, schema-bound or schema-free, connected through relations. Open a study to explore.</p></section>
+    <div class="concept-grid">$cards</div>
+    <section class="review-notes"><div><span class="eyebrow">What to look for</span><h2>The data.<br>The structure.<br>The connections.</h2></div><div><p>Compare how each study presents data ownership, schema choices, and relationships in one CMDB.</p><p><strong>Confluence</strong> feels calm and open. <strong>Orbit</strong> puts the hub centre stage. <strong>Fabric</strong> brings an architectural, editorial character.</p><p>The artwork illustrates concepts and an example setup. It does not depict an existing graph interface or automatic source management.</p></div></section>
+  </main>
+  <footer class="container gallery-footer"><span>Hubuum / Landing page exploration</span><span>Shared story. Original vector artwork. Three distinct directions.</span></footer>
+</body>
+</html>

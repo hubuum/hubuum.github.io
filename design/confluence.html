@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Hubuum: a flexible, open-source CMDB for authoritative and reference data, schema-bound or schema-free, connected through relations. Confluence design study.">
+  <meta name="theme-color" content="#174f57">
+  <title>Hubuum — Confluence / Design study 01</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/site.css">
+  <script src="assets/site.js" defer></script>
+</head>
+<body class="concept confluence">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <aside class="review-strip" aria-label="Design review">
+    <a href="index.html">← <span>All concepts</span></a>
+    <span class="review-label">Landing page studies</span>
+    <nav aria-label="Choose a design direction"><a href="confluence.html" aria-current="page">01<span> Confluence</span></a><a href="orbit.html">02<span> Orbit</span></a><a href="fabric.html">03<span> Fabric</span></a></nav>
+  </aside>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#main" aria-label="Hubuum home"><svg class="brand-mark" viewBox="-32 -35 64 60" aria-hidden="true"><g transform="translate(0 0) scale(1)" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M-14-10 0-18 14-10 14 7 0 15-14 7Z M-14-10 0-2 14-10 M0-2V15 M0-18V-27 M14 7 23 12 M-14 7-23 12"/><circle cx="0" cy="-30" r="3"/><circle cx="26" cy="14" r="3"/><circle cx="-26" cy="14" r="3"/></g></svg><span>hubuum</span></a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#idea">The CMDB</a><a href="#structure">Your model</a><a href="#ecosystem">Ecosystem</a>
+      </nav>
+      <a class="header-cta" href="https://hubuum.github.io/hubuum/">Documentation <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> The flexible, open-source CMDB</p>
+          <h1>Your CMDB.<br>Your data. <em>Your model.</em></h1>
+          <p class="hero-description">Authoritative and reference data, together. Define classes, choose schemas or stay schema-free, and connect your objects.</p>
+          <div class="actions"><a class="button primary" href="https://hubuum.github.io/get-started/">Get started <span aria-hidden="true">↗</span></a><a class="button quiet" href="#idea">Discover Hubuum <span aria-hidden="true">↓</span></a></div>
+        </div>
+        <figure class="hero-art"><img src="assets/confluence.svg" alt="Flowing currents bring structured and free-form records into a shared CMDB. Calm, open, and connected." fetchpriority="high"><figcaption>Different data. A shared CMDB.</figcaption></figure>
+      </div>
+      <div class="container hero-foot"><span>Schema-bound or schema-free. Connected by design.</span><a href="#idea">Explore your CMDB <span aria-hidden="true">↓</span></a></div>
+    </section>
+
+    <section class="chapter introduction" id="idea">
+      <div class="container">
+        <div class="section-label"><span>01 / Your configuration management database</span><span class="section-rule"></span><span>Yours to shape.</span></div>
+        <div class="intro-grid">
+          <h2>A place for the data<br><em>that matters.</em></h2>
+          <div class="section-copy"><p class="lead">Services, infrastructure, and the things only your organisation manages.</p><p>Hubuum is a configuration management database (CMDB) for your world. Define resource classes and store the JSON data that matters to you.</p></div>
+        </div>
+        <div class="resource-types" aria-label="Examples of resource types you can define"><span>Services</span><span>Infrastructure</span><span>Configuration</span><span>Organisational data</span><span class="custom-type">Your own concepts <span aria-hidden="true">+</span></span></div>
+      </div>
+    </section>
+
+    <section class="chapter authority-section" id="authority">
+      <div class="container">
+        <div class="section-label"><span>02 / Authority where it belongs</span><span class="section-rule"></span><span>Different sources. A shared inventory.</span></div>
+        <div class="authority-heading"><h2>Authoritative here.<br>Authoritative elsewhere.<br><em>Together in Hubuum.</em></h2><p>One inventory for records you own and data whose authority stays elsewhere.</p></div>
+        <div class="authority-grid">
+          <article class="authority-card"><span class="eyebrow">Data you maintain in Hubuum</span><h3>Make it the source of truth.</h3><p>Maintain your service catalogue, organisational data, or custom inventory directly in Hubuum.</p></article>
+          <article class="authority-card"><span class="eyebrow">Data you bring from other systems</span><h3>Keep its authority upstream.</h3><p>Bring in reference data without moving its source of truth. Your integrations collect and refresh it.</p></article>
+        </div>
+        <div class="authority-bridge"><span aria-hidden="true"></span><svg class="brand-mark" viewBox="-32 -35 64 60" aria-hidden="true"><g transform="translate(0 0) scale(1)" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M-14-10 0-18 14-10 14 7 0 15-14 7Z M-14-10 0-2 14-10 M0-2V15 M0-18V-27 M14 7 23 12 M-14 7-23 12"/><circle cx="0" cy="-30" r="3"/><circle cx="26" cy="14" r="3"/><circle cx="-26" cy="14" r="3"/></g></svg><strong>One CMDB. Both kinds of data.</strong><span aria-hidden="true"></span></div>
+      </div>
+    </section>
+
+    <section class="chapter structure-section" id="structure">
+      <div class="container">
+        <div class="section-label"><span>03 / Choose the structure</span><span class="section-rule"></span><span>Bound or free. Side by side.</span></div>
+        <div class="structure-heading"><h2>Structure where you need it.<br><em>Freedom where you don’t.</em></h2><p>Each class sets its objects’ schema policy: validate with JSON Schema, or leave the data schema-free.</p></div>
+        <div class="schema-grid">
+          <article class="schema-card schema-bound"><div class="schema-card-heading"><span class="schema-glyph" aria-hidden="true">▦</span><div><span class="eyebrow">Schema-bound</span><h3>A shape you can rely on.</h3></div></div><p>Validate with the <a href="https://json-schema.org/specification">JSON Schema standard</a>.</p><div class="record-example"><div class="record-title"><strong>Service / Atlas</strong><span>Example data</span></div><dl><div><dt>owner <span>required string</span></dt><dd>Platform</dd></div><div><dt>tier <span>integer · 1–3</span></dt><dd>1</dd></div><div><dt>availability <span>number · 0–100%</span></dt><dd>99.9</dd></div><div><dt>enabled <span>boolean</span></dt><dd>true</dd></div><div><dt>tags <span>array of strings</span></dt><dd>["api", "public"]</dd></div><div><dt>support <span>nested object</span></dt><dd>{"hours": "24/7"}</dd></div></dl></div></article>
+          <article class="schema-card schema-free"><div class="schema-card-heading"><span class="schema-glyph" aria-hidden="true">{ }</span><div><span class="eyebrow">Schema-free</span><h3>Room for what comes next.</h3></div></div><p>Let JSON data evolve as your ideas take shape.</p><div class="record-example"><div class="record-title"><strong>Context / Research notes</strong><span>Example data</span></div><pre><code>{
+  "purpose": "Explore new hosting",
+  "questions": ["Capacity?", "Location?"],
+  "candidate": true
+}</code></pre></div></article>
+        </div>
+        <p class="schema-common">Authority and structure are independent.<br> Either approach supports <strong>authoritative records</strong> and <strong>reference data</strong>.</p>
+      </div>
+    </section>
+
+    <section class="chapter connection-section" id="connections">
+      <div class="container">
+        <div class="section-label"><span>04 / Bind objects through relations</span><span class="section-rule"></span><span>Make the context useful.</span></div>
+        <div class="connection-heading"><h2>Objects hold the facts.<br><em>Relationships provide<br>the context.</em></h2><p>Connect objects across resource types,<br> sources, and schema choices.</p></div>
+        <div class="connection-grid">
+          <div class="model-figure"><img src="assets/relationships.svg" loading="lazy" alt="Example: schema-bound service Atlas, authoritative in Hubuum, runs on schema-bound server web-01 from an upstream source. Atlas is described by schema-free research notes owned in Hubuum. The server is located in Oslo, represented by schema-free reference data from upstream."><span class="figure-caption">Atlas inventory · a few connected objects</span></div>
+          <div class="model-story">
+            <div class="model-tabs" role="tablist" aria-label="Explore the model">
+              <button type="button" id="tab-classes" role="tab" aria-controls="panel-classes" aria-selected="true">Classes</button>
+              <button type="button" id="tab-model" role="tab" aria-controls="panel-model" aria-selected="false" tabindex="-1">Objects</button>
+              <button type="button" id="tab-connect" role="tab" aria-controls="panel-connect" aria-selected="false" tabindex="-1">Relations</button>
+              <button type="button" id="tab-use" role="tab" aria-controls="panel-use" aria-selected="false" tabindex="-1">Access</button>
+            </div>
+            <div id="panel-classes" class="model-panel" role="tabpanel" aria-labelledby="tab-classes" tabindex="0"><span class="eyebrow">Your world. Your resource types.</span><h3>Define the classes.<br>Shape your model.</h3><p>Classes define your resource types: services, servers, or your own concepts. Choose a schema for each, or keep its objects schema-free.</p><div class="example-detail"><span>Service</span><strong>Schema-bound catalogue</strong><span>Server</span><strong>Schema-bound inventory</strong><span>Context</span><strong>Free-form notes</strong></div></div>
+            <div id="panel-model" class="model-panel" role="tabpanel" aria-labelledby="tab-model" tabindex="0" hidden><span class="eyebrow">Different content. A common model.</span><h3>A place for every<br>kind of resource.</h3><p>Every object belongs to a class and holds JSON data under its schema policy. Atlas is a Service; web-01 is a Server.</p><div class="example-detail"><span>Service</span><strong>Atlas · schema-bound</strong><span>Context</span><strong>Research notes · schema-free</strong><span>Connection</span><strong>Atlas is described by the notes</strong></div></div>
+            <div id="panel-connect" class="model-panel" role="tabpanel" aria-labelledby="tab-connect" tabindex="0" hidden><span class="eyebrow">Facts become context</span><h3>Bring the objects<br>into relation.</h3><p>Class relations connect resource types. Object relations connect instances: Atlas runs on web-01, which is located in Oslo.</p><div class="example-detail"><span>Service</span><strong>Atlas</strong><span>Runs on</span><strong>web-01</strong><span>Located in</span><strong>Oslo</strong></div></div>
+            <div id="panel-use" class="model-panel" role="tabpanel" aria-labelledby="tab-use" tabindex="0" hidden><span class="eyebrow">A shared model. Intentional access.</span><h3>Give people the<br>access they need.</h3><p>Organise resources in collections. Group permissions give people and service accounts the access they need.</p><div class="example-detail"><span>Organise</span><strong>Collections</strong><span>People</span><strong>Users and groups</strong><span>Automation</span><strong>Service accounts</strong></div></div>
+            <a class="text-link" href="https://hubuum.github.io/hubuum/">Explore the server documentation <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter ecosystem-section" id="ecosystem">
+      <div class="container">
+        <div class="section-label"><span>05 / One connected ecosystem</span><span class="section-rule"></span><span>Choose your way in.</span></div>
+        <div class="ecosystem-heading"><h2>One CMDB.<br><em>Many ways to work.</em></h2><p>Search, import, export, and build through one API.</p></div>
+        <div class="ecosystem-grid">
+          <a class="ecosystem-server" href="https://hubuum.github.io/hubuum/"><span class="eyebrow">The foundation</span><svg class="brand-mark" viewBox="-32 -35 64 60" aria-hidden="true"><g transform="translate(0 0) scale(1)" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M-14-10 0-18 14-10 14 7 0 15-14 7Z M-14-10 0-2 14-10 M0-2V15 M0-18V-27 M14 7 23 12 M-14 7-23 12"/><circle cx="0" cy="-30" r="3"/><circle cx="26" cy="14" r="3"/><circle cx="-26" cy="14" r="3"/></g></svg><h3>Hubuum Server</h3><p>Classes, objects, relations, and permissions. One API for your CMDB.</p><span class="text-link">Deploy and explore <span aria-hidden="true">↗</span></span></a>
+          <div class="ecosystem-tools">
+            <a href="https://hubuum.github.io/hubuum-frontend/"><span class="tool-icon" aria-hidden="true">▦</span><div><h3>Web frontend</h3><p>A window into your inventory.</p></div><span aria-hidden="true">↗</span></a>
+            <a href="https://hubuum.github.io/hubuum-cli/"><span class="tool-icon" aria-hidden="true">⌘</span><div><h3>Command line</h3><p>Explore, script, and automate.</p></div><span aria-hidden="true">↗</span></a>
+            <a href="https://hubuum.github.io/hubuum-client-rust/"><span class="tool-icon code-icon" aria-hidden="true">Rs</span><div><h3>Rust client</h3><p>Typed access for your applications.</p></div><span aria-hidden="true">↗</span></a>
+            <a href="https://hubuum.github.io/hubuum-client-python/"><span class="tool-icon code-icon" aria-hidden="true">Py</span><div><h3>Python client</h3><p>Connect your Python workflows.</p></div><span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing">
+      <div class="container closing-inner"><div><p class="eyebrow">Open source. Self-hosted. Yours to shape.</p><h2>Your data belongs.<br><em>Give it a model.</em></h2><div class="actions"><a class="button primary" href="https://hubuum.github.io/get-started/">Get started <span aria-hidden="true">↗</span></a><a class="button quiet" href="https://github.com/hubuum/hubuum">Explore on GitHub <span aria-hidden="true">↗</span></a></div></div><img src="assets/confluence.svg" loading="lazy" alt="" class="closing-art"></div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><div><a class="brand" href="#main"><svg class="brand-mark" viewBox="-32 -35 64 60" aria-hidden="true"><g transform="translate(0 0) scale(1)" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M-14-10 0-18 14-10 14 7 0 15-14 7Z M-14-10 0-2 14-10 M0-2V15 M0-18V-27 M14 7 23 12 M-14 7-23 12"/><circle cx="0" cy="-30" r="3"/><circle cx="26" cy="14" r="3"/><circle cx="-26" cy="14" r="3"/></g></svg><span>hubuum</span></a><p>A flexible CMDB for your data, on your terms.</p></div><div class="footer-meta"><nav aria-label="Footer"><a href="https://hubuum.github.io/hubuum/">Documentation</a><a href="https://github.com/hubuum">GitHub</a><a href="https://github.com/hubuum/hubuum/blob/main/LICENSE">MIT licence</a></nav><p>Open source · Pre-1.0 · For evaluation and early deployments</p></div></div></footer>
+</body>
+</html>
