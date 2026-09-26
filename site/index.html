@@ -1,745 +1,128 @@
-
 <!doctype html>
-<html lang="en" class="no-js">
-  <head>
-    
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width,initial-scale=1">
-      
-        <meta name="description" content="Connected operational data, with a server, web console, CLI, and typed Rust and Python clients.">
-      
-      
-      
-        <link rel="canonical" href="https://hubuum.github.io/">
-      
-      
-      
-        <link rel="next" href="./get-started/">
-      
-      
-        
-      
-      
-      <link rel="icon" href="./assets/images/favicon.png">
-      <meta name="generator" content="zensical-0.0.64">
-    
-    
-      
-        <title>Welcome - Hubuum</title>
-      
-    
-    
-      
-        
-      
-      <link rel="stylesheet" href="./assets/stylesheets/modern/main.40d3fdbb.min.css">
-      
-        
-          
-        
-        <link rel="stylesheet" href="./assets/stylesheets/modern/palette.812a03bb.min.css">
-      
-      
-
-
-    
-    
-      
-    
-    
-      
-    
-    
-      <link rel="stylesheet" href="./assets/stylesheets/extra.css">
-    
-    <script>__md_scope=new URL(".",location),__md_scope.pathname.endsWith("/")||(__md_scope=new URL(__md_scope.pathname+"/",location)),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,_=__md_scope)=>JSON.parse(t.getItem(_.pathname+"."+e)),__md_set=(e,t,_=localStorage,a=__md_scope)=>{try{_.setItem(a.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
-    
-      
-
-    
-    
-  </head>
-  
-  
-    
-    
-      
-    
-    
-    
-    
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="teal">
-  
-    
-    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
-    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
-    <label class="md-overlay" for="__drawer" aria-label="Navigation"></label>
-    <div data-md-component="skip">
-      
-        
-        <a href="#your-inventory-connected" class="md-skip">
-          Skip to content
-        </a>
-      
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Hubuum: a flexible, open-source CMDB for authoritative and reference data, schema-bound or schema-free, connected through relations.">
+  <meta name="theme-color" content="#211419">
+  <title>Hubuum — Your CMDB. Your data. Your model.</title>
+  <link rel="canonical" href="https://hubuum.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Hubuum — Your CMDB. Your data. Your model.">
+  <meta property="og:description" content="A flexible, open-source CMDB. Authoritative and reference data, schema-bound or schema-free, connected through relations.">
+  <meta property="og:url" content="https://hubuum.github.io/">
+  <link rel="icon" href="./assets/landing/favicon-orbit.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://hubuum.github.io/assets/stylesheets/hubuum.css">
+  <link rel="stylesheet" href="./assets/landing/landing.css">
+  <script src="./assets/landing/landing.js" defer></script>
+</head>
+<body class="orbit">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#main" aria-label="Hubuum home"><svg class="brand-mark" viewBox="-32 -35 64 60" aria-hidden="true"><g transform="translate(0 0) scale(1)" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M-14-10 0-18 14-10 14 7 0 15-14 7Z M-14-10 0-2 14-10 M0-2V15 M0-18V-27 M14 7 23 12 M-14 7-23 12"/><circle cx="0" cy="-30" r="3"/><circle cx="26" cy="14" r="3"/><circle cx="-26" cy="14" r="3"/></g></svg><span>hubuum</span></a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#idea">The CMDB</a><a href="#structure">Your model</a><a href="#ecosystem">Ecosystem</a>
+      </nav>
+      <a class="header-cta" href="https://hubuum.github.io/hubuum/">Documentation <span aria-hidden="true">↗</span></a>
     </div>
-    <div data-md-component="announce">
-      
-        <aside class="md-banner">
-          <div class="md-banner__inner md-grid md-typeset">
-            
-            
-  <nav class="hubuum-ecosystem" aria-label="Hubuum projects">
-    <a href="https://hubuum.github.io/"><strong>Hubuum</strong></a>
-    
-      <a href="https://hubuum.github.io/hubuum/">Server</a>
-    
-      <a href="https://hubuum.github.io/hubuum-frontend/">Frontend</a>
-    
-      <a href="https://hubuum.github.io/hubuum-cli/">CLI</a>
-    
-      <a href="https://hubuum.github.io/hubuum-client-rust/">Rust client</a>
-    
-      <a href="https://hubuum.github.io/hubuum-client-python/">Python client</a>
-    
-  </nav>
-  
-
-          </div>
-          
-        </aside>
-      
-    </div>
-    
-    
-      
-
-  
-
-<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="" title="Hubuum" class="md-header__button md-logo" aria-label="Hubuum" data-md-component="logo">
-      
-  
-  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-network" viewBox="0 0 24 24"><rect width="6" height="6" x="16" y="16" rx="1"/><rect width="6" height="6" x="2" y="16" rx="1"/><rect width="6" height="6" x="9" y="2" rx="1"/><path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3M12 12V8"/></svg>
-
-    </a>
-    <label class="md-header__button md-icon" for="__drawer" aria-label="Navigation">
-      
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-menu" viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16"/></svg>
-    </label>
-    <div class="md-header__title" data-md-component="header-title">
-      <div class="md-header__ellipsis">
-        <div class="md-header__topic">
-          <span class="md-ellipsis">
-            Hubuum
-          </span>
+  </header>
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> The flexible, open-source CMDB</p>
+          <h1>Your CMDB.<br>Your data. <em>Your model.</em></h1>
+          <p class="hero-description">Authoritative and reference data, together. Define classes, choose schemas or stay schema-free, and connect your objects.</p>
+          <div class="actions"><a class="button primary" href="./get-started/">Get started <span aria-hidden="true">↗</span></a><a class="button quiet" href="#idea">Discover Hubuum <span aria-hidden="true">↓</span></a></div>
         </div>
-        <div class="md-header__topic" data-md-component="header-topic">
-          <span class="md-ellipsis">
-            
-              Welcome
-            
-          </span>
+        <figure class="hero-art"><img src="./assets/landing/orbit.svg" alt="A luminous hub connects records from different sources. One CMDB at the centre of your world." fetchpriority="high"><figcaption>Your data. Other sources. One connected model.</figcaption></figure>
+      </div>
+      <div class="container hero-foot"><span>Schema-bound or schema-free. Connected by design.</span><a href="#idea">Explore your CMDB <span aria-hidden="true">↓</span></a></div>
+    </section>
+
+    <section class="chapter introduction" id="idea">
+      <div class="container">
+        <div class="section-label"><span>01 / Your configuration management database</span><span class="section-rule"></span><span>Yours to shape.</span></div>
+        <div class="intro-grid">
+          <h2>A place for the data<br><em>that matters.</em></h2>
+          <div class="section-copy"><p class="lead">Services, infrastructure, and the things only your organisation manages.</p><p>Hubuum is a configuration management database (CMDB) for your world. Define resource classes and store the JSON data that matters to you.</p></div>
+        </div>
+        <div class="resource-types" aria-label="Examples of resource types you can define"><span>Services</span><span>Infrastructure</span><span>Configuration</span><span>Organisational data</span><span class="custom-type">Your own concepts <span aria-hidden="true">+</span></span></div>
+      </div>
+    </section>
+
+    <section class="chapter authority-section" id="authority">
+      <div class="container">
+        <div class="section-label"><span>02 / Authority where it belongs</span><span class="section-rule"></span><span>Different sources. A shared inventory.</span></div>
+        <div class="authority-heading"><h2>Authoritative here.<br>Authoritative elsewhere.<br><em>Together in Hubuum.</em></h2><p>One inventory for records you own and data whose authority stays elsewhere.</p></div>
+        <div class="authority-grid">
+          <article class="authority-card"><span class="eyebrow">Data you maintain in Hubuum</span><h3>Make it the source of truth.</h3><p>Maintain your service catalogue, organisational data, or custom inventory directly in Hubuum.</p></article>
+          <article class="authority-card"><span class="eyebrow">Data you bring from other systems</span><h3>Keep its authority upstream.</h3><p>Bring in reference data without moving its source of truth. Your integrations collect and refresh it.</p></article>
+        </div>
+        <div class="authority-bridge"><span aria-hidden="true"></span><svg class="brand-mark" viewBox="-32 -35 64 60" aria-hidden="true"><g transform="translate(0 0) scale(1)" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M-14-10 0-18 14-10 14 7 0 15-14 7Z M-14-10 0-2 14-10 M0-2V15 M0-18V-27 M14 7 23 12 M-14 7-23 12"/><circle cx="0" cy="-30" r="3"/><circle cx="26" cy="14" r="3"/><circle cx="-26" cy="14" r="3"/></g></svg><strong>One CMDB. Both kinds of data.</strong><span aria-hidden="true"></span></div>
+      </div>
+    </section>
+
+    <section class="chapter structure-section" id="structure">
+      <div class="container">
+        <div class="section-label"><span>03 / Choose the structure</span><span class="section-rule"></span><span>Bound or free. Side by side.</span></div>
+        <div class="structure-heading"><h2>Structure where you need it.<br><em>Freedom where you don’t.</em></h2><p>Each class sets its objects’ schema policy: validate with JSON Schema, or leave the data schema-free.</p></div>
+        <div class="schema-grid">
+          <article class="schema-card schema-bound"><div class="schema-card-heading"><span class="schema-glyph" aria-hidden="true">▦</span><div><span class="eyebrow">Schema-bound</span><h3>A shape you can rely on.</h3></div></div><p>Validate with the <a href="https://json-schema.org/specification">JSON Schema standard</a>.</p><div class="record-example"><div class="record-title"><strong>Service / Atlas</strong><span>Example data</span></div><dl><div><dt>owner <span>required string</span></dt><dd>Platform</dd></div><div><dt>tier <span>integer · 1–3</span></dt><dd>1</dd></div><div><dt>availability <span>number · 0–100%</span></dt><dd>99.9</dd></div><div><dt>enabled <span>boolean</span></dt><dd>true</dd></div><div><dt>tags <span>array of strings</span></dt><dd>["api", "public"]</dd></div><div><dt>support <span>nested object</span></dt><dd>{"hours": "24/7"}</dd></div></dl></div></article>
+          <article class="schema-card schema-free"><div class="schema-card-heading"><span class="schema-glyph" aria-hidden="true">{ }</span><div><span class="eyebrow">Schema-free</span><h3>Room for what comes next.</h3></div></div><p>Let JSON data evolve as your ideas take shape.</p><div class="record-example"><div class="record-title"><strong>Context / Research notes</strong><span>Example data</span></div><pre><code>{
+  "purpose": "Explore new hosting",
+  "questions": ["Capacity?", "Location?"],
+  "candidate": true
+}</code></pre></div></article>
+        </div>
+        <p class="schema-common">Authority and structure are independent.<br> Either approach supports <strong>authoritative records</strong> and <strong>reference data</strong>.</p>
+      </div>
+    </section>
+
+    <section class="chapter connection-section" id="connections">
+      <div class="container">
+        <div class="section-label"><span>04 / Bind objects through relations</span><span class="section-rule"></span><span>Make the context useful.</span></div>
+        <div class="connection-heading"><h2>Objects hold the facts.<br><em>Relationships provide<br>the context.</em></h2><p>Connect objects across resource types,<br> sources, and schema choices.</p></div>
+        <div class="connection-grid">
+          <div class="model-figure"><img src="./assets/landing/relationships-orbit.svg" loading="lazy" alt="Example: schema-bound service Atlas, authoritative in Hubuum, runs on schema-bound server web-01 from an upstream source. Atlas is described by schema-free research notes owned in Hubuum. The server is located in Oslo, represented by schema-free reference data from upstream."><span class="figure-caption">Atlas inventory · a few connected objects</span></div>
+          <div class="model-story">
+            <div class="model-tabs" role="tablist" aria-label="Explore the model">
+              <button type="button" id="tab-classes" role="tab" aria-controls="panel-classes" aria-selected="true">Classes</button>
+              <button type="button" id="tab-model" role="tab" aria-controls="panel-model" aria-selected="false" tabindex="-1">Objects</button>
+              <button type="button" id="tab-connect" role="tab" aria-controls="panel-connect" aria-selected="false" tabindex="-1">Relations</button>
+              <button type="button" id="tab-use" role="tab" aria-controls="panel-use" aria-selected="false" tabindex="-1">Access</button>
+            </div>
+            <div id="panel-classes" class="model-panel" role="tabpanel" aria-labelledby="tab-classes" tabindex="0"><span class="eyebrow">Your world. Your resource types.</span><h3>Define the classes.<br>Shape your model.</h3><p>Classes define your resource types: services, servers, or your own concepts. Choose a schema for each, or keep its objects schema-free.</p><div class="example-detail"><span>Service</span><strong>Schema-bound catalogue</strong><span>Server</span><strong>Schema-bound inventory</strong><span>Context</span><strong>Free-form notes</strong></div></div>
+            <div id="panel-model" class="model-panel" role="tabpanel" aria-labelledby="tab-model" tabindex="0"><span class="eyebrow">Different content. A common model.</span><h3>A place for every<br>kind of resource.</h3><p>Every object belongs to a class and holds JSON data under its schema policy. Atlas is a Service; web-01 is a Server.</p><div class="example-detail"><span>Service</span><strong>Atlas · schema-bound</strong><span>Context</span><strong>Research notes · schema-free</strong><span>Connection</span><strong>Atlas is described by the notes</strong></div></div>
+            <div id="panel-connect" class="model-panel" role="tabpanel" aria-labelledby="tab-connect" tabindex="0"><span class="eyebrow">Facts become context</span><h3>Bring the objects<br>into relation.</h3><p>Class relations connect resource types. Object relations connect instances: Atlas runs on web-01, which is located in Oslo.</p><div class="example-detail"><span>Service</span><strong>Atlas</strong><span>Runs on</span><strong>web-01</strong><span>Located in</span><strong>Oslo</strong></div></div>
+            <div id="panel-use" class="model-panel" role="tabpanel" aria-labelledby="tab-use" tabindex="0"><span class="eyebrow">A shared model. Intentional access.</span><h3>Give people the<br>access they need.</h3><p>Organise resources in collections. Group permissions give people and service accounts the access they need.</p><div class="example-detail"><span>Organise</span><strong>Collections</strong><span>People</span><strong>Users and groups</strong><span>Automation</span><strong>Service accounts</strong></div></div>
+            <a class="text-link" href="https://hubuum.github.io/hubuum/">Explore the server documentation <span aria-hidden="true">↗</span></a>
+          </div>
         </div>
       </div>
-    </div>
-    
-      
-        <form class="md-header__option" data-md-component="palette">
-  
-    
-    
-    
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="teal"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
-    
-      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-moon" viewBox="0 0 24 24"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"/></svg>
-      </label>
-    
-  
-    
-    
-    
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="teal"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
-    
-      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
-      </label>
-    
-  
-</form>
-      
-    
-    
-      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
-    
-    
-    
-      
-      
-        <label class="md-header__button md-icon" for="__search" aria-label="Search">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-search" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
-        </label>
-        <div class="md-search" data-md-component="search" role="dialog" aria-label="Search">
-  <button type="button" class="md-search__button">
-    Search
-  </button>
-</div>
-      
-    
-    <div class="md-header__source">
-      
-        <a href="https://github.com/hubuum/hubuum.github.io" title="Go to repository" class="md-source" data-md-component="source">
-  <div class="md-source__icon md-icon">
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5v52c0 15 12.5 23.5 27.5 17.5C441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5v-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21"/></svg>
-  </div>
-  <div class="md-source__repository">
-    hubuum/hubuum.github.io
-  </div>
-</a>
-      
-    </div>
-  </nav>
-  
-    
-      
-<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
-  <div class="md-grid">
-    <ul class="md-tabs__list">
-      
-        
-  
-  
-  
-    
-  
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="" class="md-tabs__link">
-        
-  
-  Welcome
+    </section>
 
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="./get-started/" class="md-tabs__link">
-        
-  
-  Get started
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="./community/" class="md-tabs__link">
-        
-  
-  Community
-
-      </a>
-    </li>
-  
-
-      
-    </ul>
-  </div>
-</nav>
-    
-  
-</header>
-    
-    <div class="md-container" data-md-component="container">
-      
-      
-        
-      
-      <main class="md-main" data-md-component="main">
-        <div class="md-main__inner md-grid">
-          
-            
-              
-                
-              
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-
-  
-
-
-<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
-  <label class="md-nav__title" for="__drawer">
-    <a href="" title="Hubuum" class="md-nav__button md-logo" aria-label="Hubuum" data-md-component="logo">
-      
-  
-  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-network" viewBox="0 0 24 24"><rect width="6" height="6" x="16" y="16" rx="1"/><rect width="6" height="6" x="2" y="16" rx="1"/><rect width="6" height="6" x="9" y="2" rx="1"/><path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3M12 12V8"/></svg>
-
-    </a>
-    Hubuum
-  </label>
-  
-    <div class="md-nav__source">
-      <a href="https://github.com/hubuum/hubuum.github.io" title="Go to repository" class="md-source" data-md-component="source">
-  <div class="md-source__icon md-icon">
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5v52c0 15 12.5 23.5 27.5 17.5C441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5v-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21"/></svg>
-  </div>
-  <div class="md-source__repository">
-    hubuum/hubuum.github.io
-  </div>
-</a>
-    </div>
-  
-  <ul class="md-nav__list" data-md-scrollfix>
-    
-      
-      
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Welcome
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="" class="md-nav__link md-nav__link--active">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Welcome
-
-    
-  </span>
-  
-  
-
-      </a>
-      
-        
-
-
-<nav class="md-nav md-nav--secondary" aria-label="On this page">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      On this page
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#one-ecosystem-five-ways-in" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        One ecosystem, five ways in
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#model-the-resources-you-have" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Model the resources you have
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#choose-compatible-releases" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Choose compatible releases
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="./get-started/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Get started
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="./community/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Community
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-  </ul>
-</nav>
-                  </div>
-                </div>
-              </div>
-            
-            
-              
-                
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
-                <div class="md-sidebar__scrollwrap">
-                  
-                    
-                    
-                    
-                      
-                    
-                    
-                      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-                      <div class="md-sidebar-button__wrapper">
-                        <label class="md-sidebar-button" for="__toc"></label>
-                      </div>
-                    
-                  
-                  <div class="md-sidebar__inner">
-                    
-
-
-<nav class="md-nav md-nav--secondary" aria-label="On this page">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      On this page
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#one-ecosystem-five-ways-in" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        One ecosystem, five ways in
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#model-the-resources-you-have" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Model the resources you have
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#choose-compatible-releases" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Choose compatible releases
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-                  </div>
-                </div>
-              </div>
-            
-          
-          
-            <div class="md-content" data-md-component="content">
-              
-                
-
-  
-
-
-
-  
-
-
-              
-              <article class="md-content__inner md-typeset">
-                
-                  
-  
-    <a href="https://github.com/hubuum/hubuum.github.io/edit/main/docs/index.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
-      
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-file-pen" viewBox="0 0 24 24"><path d="M12.659 22H18a2 2 0 0 0 2-2V8a2.4 2.4 0 0 0-.706-1.706l-3.588-3.588A2.4 2.4 0 0 0 14 2H6a2 2 0 0 0-2 2v9.34"/><path d="M14 2v5a1 1 0 0 0 1 1h5M10.378 12.622a1 1 0 0 1 3 3.003L8.36 20.637a2 2 0 0 1-.854.506l-2.867.837a.5.5 0 0 1-.62-.62l.836-2.869a2 2 0 0 1 .506-.853z"/></svg>
-    </a>
-  
-  
-
-
-<h1 id="your-inventory-connected">Your inventory, connected<a class="headerlink" href="#your-inventory-connected" title="Permanent link">&para;</a></h1>
-<p>Hubuum brings operational data into a shared model. Describe your resources,
-connect them with relationships, and give people and applications consistent
-access through an API, browser, terminal, or typed client library.</p>
-<p><a href="get-started/">Choose your starting point</a> · <a href="https://hubuum.github.io/hubuum/">Explore server documentation</a></p>
-<h2 id="one-ecosystem-five-ways-in">One ecosystem, five ways in<a class="headerlink" href="#one-ecosystem-five-ways-in" title="Permanent link">&para;</a></h2>
-<!-- markdownlint-disable-next-line MD033 -->
-<div class="grid cards">
-<ul>
-<li>
-<p><strong>Server</strong></p>
-<p>The data model, permissions, search, API, and background workflows.
-Start here to deploy Hubuum or understand how it works.</p>
-<p><a href="https://hubuum.github.io/hubuum/">Documentation</a> · <a href="https://github.com/hubuum/hubuum">Source</a> · <a href="https://github.com/hubuum/hubuum/releases">Releases</a></p>
-</li>
-<li>
-<p><strong>Web frontend</strong></p>
-<p>Work with your inventory in a browser. Find configuration, deployment,
-observability, and contributor guides for the web console.</p>
-<p><a href="https://hubuum.github.io/hubuum-frontend/">Documentation</a> · <a href="https://github.com/hubuum/hubuum-frontend">Source</a> · <a href="https://github.com/hubuum/hubuum-frontend/releases">Releases</a></p>
-</li>
-<li>
-<p><strong>CLI</strong></p>
-<p>Explore interactively, run one-shot commands, or build repeatable automation
-with scripts, pipelines, and extensions.</p>
-<p><a href="https://hubuum.github.io/hubuum-cli/">Documentation</a> · <a href="https://github.com/hubuum/hubuum-cli">Source</a> · <a href="https://github.com/hubuum/hubuum-cli/releases">Releases</a></p>
-</li>
-<li>
-<p><strong>Rust client</strong></p>
-<p>Integrate Hubuum into Rust applications with typed resources, queries,
-pagination, and asynchronous or blocking clients.</p>
-<p><a href="https://hubuum.github.io/hubuum-client-rust/">Documentation</a> · <a href="https://github.com/hubuum/hubuum-client-rust">Source</a> · <a href="https://github.com/hubuum/hubuum-client-rust/releases">Releases</a></p>
-</li>
-<li>
-<p><strong>Python client</strong></p>
-<p>Connect Python applications and automation using typed synchronous and
-asynchronous clients, models, and task helpers.</p>
-<p><a href="https://hubuum.github.io/hubuum-client-python/">Documentation</a> · <a href="https://github.com/hubuum/hubuum-client-python">Source</a> · <a href="https://github.com/hubuum/hubuum-client-python/releases">Releases</a></p>
-</li>
-</ul>
-</div>
-<h2 id="model-the-resources-you-have">Model the resources you have<a class="headerlink" href="#model-the-resources-you-have" title="Permanent link">&para;</a></h2>
-<p>Collections organize access. Classes describe kinds of resources. Objects hold
-your data, and relationships connect it. Optional JSON Schema validation,
-computed fields, history, and audit events help maintain a useful inventory as
-it grows.</p>
-<p>Use Hubuum alongside the systems that already own your data. Import their facts,
-connect related records, and query the resulting model through one API.</p>
-<h2 id="choose-compatible-releases">Choose compatible releases<a class="headerlink" href="#choose-compatible-releases" title="Permanent link">&para;</a></h2>
-<p>Each project releases independently. Its documentation opens the latest stable
-release, retains older versions at <code>/vX.Y.Z/</code>, and labels explicitly selected
-<code>main</code> documentation as development. Check the client's or frontend's declared
-server compatibility before combining versions.</p>
-<p>Hubuum is open-source and pre-1.0. Pin the versions you deploy and review release
-notes for upgrade requirements. <a href="community/">Get help or contribute</a>.</p>
-
-  
-
-
-
-
-
-
-
-
-
-  
-  
-
-
-
-
-  
-
-
-
-                
-              </article>
-            </div>
-          
-          
-<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+    <section class="chapter ecosystem-section" id="ecosystem">
+      <div class="container">
+        <div class="section-label"><span>05 / One connected ecosystem</span><span class="section-rule"></span><span>Choose your way in.</span></div>
+        <div class="ecosystem-heading"><h2>One CMDB.<br><em>Many ways to work.</em></h2><p>Search, import, export, and build through one API.</p></div>
+        <div class="ecosystem-grid">
+          <a class="ecosystem-server" href="https://hubuum.github.io/hubuum/"><span class="eyebrow">The foundation</span><svg class="brand-mark" viewBox="-32 -35 64 60" aria-hidden="true"><g transform="translate(0 0) scale(1)" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M-14-10 0-18 14-10 14 7 0 15-14 7Z M-14-10 0-2 14-10 M0-2V15 M0-18V-27 M14 7 23 12 M-14 7-23 12"/><circle cx="0" cy="-30" r="3"/><circle cx="26" cy="14" r="3"/><circle cx="-26" cy="14" r="3"/></g></svg><h3>Hubuum Server</h3><p>Classes, objects, relations, and permissions. One API for your CMDB.</p><span class="text-link">Deploy and explore <span aria-hidden="true">↗</span></span></a>
+          <div class="ecosystem-tools">
+            <a href="https://hubuum.github.io/hubuum-frontend/"><span class="tool-icon" aria-hidden="true">▦</span><div><h3>Web frontend</h3><p>A window into your inventory.</p></div><span aria-hidden="true">↗</span></a>
+            <a href="https://hubuum.github.io/hubuum-cli/"><span class="tool-icon" aria-hidden="true">⌘</span><div><h3>Command line</h3><p>Explore, script, and automate.</p></div><span aria-hidden="true">↗</span></a>
+            <a href="https://hubuum.github.io/hubuum-client-rust/"><span class="tool-icon code-icon" aria-hidden="true">Rs</span><div><h3>Rust client</h3><p>Typed access for your applications.</p></div><span aria-hidden="true">↗</span></a>
+            <a href="https://hubuum.github.io/hubuum-client-python/"><span class="tool-icon code-icon" aria-hidden="true">Py</span><div><h3>Python client</h3><p>Connect your Python workflows.</p></div><span aria-hidden="true">↗</span></a>
+          </div>
         </div>
-        
-          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
-  
-  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-circle-arrow-up" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16 12-4-4-4 4M12 16V8"/></svg>
-  Back to top
-</button>
-        
-      </main>
-      
-        <footer class="md-footer">
-  
-    
-      
-        
-      
-      <nav class="md-footer__inner md-grid" aria-label="Footer" >
-        
-        
-          
-          <a href="./get-started/" class="md-footer__link md-footer__link--next" aria-label="Next: Get started">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              <div class="md-ellipsis">
-                Get started
-              </div>
-            </div>
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </div>
-          </a>
-        
-      </nav>
-    
-  
-  <div class="md-footer-meta md-typeset">
-    <div class="md-footer-meta__inner md-grid">
-      <div class="md-copyright">
-  
-    <div class="md-copyright__highlight">
-      Hubuum · MIT licensed
-    </div>
-  
-  
-    Made with
-    <a href="https://zensical.org/" target="_blank" rel="noopener">
-      Zensical
-    </a>
-  
-</div>
-      
-    </div>
-  </div>
-</footer>
-      
-    </div>
-    <div class="md-dialog" data-md-component="dialog">
-      <div class="md-dialog__inner md-typeset"></div>
-    </div>
-    
-      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
-    
-    
-    
-      
-      
-      
-      
-        
-        
-      <script id="__config" type="application/json">{"annotate":null,"base":".","features":["navigation.tabs","navigation.tabs.sticky","navigation.sections","navigation.path","navigation.top","navigation.footer","navigation.instant","navigation.instant.progress","content.action.edit","content.code.copy","toc.follow"],"redirect":null,"search":"./assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
-    
-    
-      <script src="./assets/javascripts/bundle.c04ba553.min.js"></script>
-      
-        <script src="./assets/javascripts/versions.js"></script>
-      
-    
-  </body>
+      </div>
+    </section>
+
+    <section class="closing">
+      <div class="container closing-inner"><div><p class="eyebrow">Open source. Self-hosted. Yours to shape.</p><h2>Your data belongs.<br><em>Give it a model.</em></h2><div class="actions"><a class="button primary" href="./get-started/">Get started <span aria-hidden="true">↗</span></a><a class="button quiet" href="https://github.com/hubuum/hubuum">Explore on GitHub <span aria-hidden="true">↗</span></a></div></div><img src="./assets/landing/orbit.svg" loading="lazy" alt="" class="closing-art"></div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><div><a class="brand" href="#main"><svg class="brand-mark" viewBox="-32 -35 64 60" aria-hidden="true"><g transform="translate(0 0) scale(1)" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M-14-10 0-18 14-10 14 7 0 15-14 7Z M-14-10 0-2 14-10 M0-2V15 M0-18V-27 M14 7 23 12 M-14 7-23 12"/><circle cx="0" cy="-30" r="3"/><circle cx="26" cy="14" r="3"/><circle cx="-26" cy="14" r="3"/></g></svg><span>hubuum</span></a><p>A flexible CMDB for your data, on your terms.</p></div><div class="footer-meta"><nav aria-label="Footer"><a href="https://hubuum.github.io/hubuum/">Documentation</a><a href="./community/">Community</a><a href="https://github.com/hubuum">GitHub</a><a href="https://github.com/hubuum/hubuum/blob/main/LICENSE">MIT licence</a></nav><p>Open source · Pre-1.0 · For evaluation and early deployments</p></div></div></footer>
+</body>
 </html>

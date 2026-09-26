@@ -1,0 +1,183 @@
+/* Canonical, unversioned theme for every Hubuum documentation edition.
+   Keep selectors compatible with retained Zensical builds. */
+:root {
+  --body-text-scale: 1.25;
+  --font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --paper: #fff9f0;
+  --ink: #3c2b23;
+  --muted: #766252;
+  --accent: #af4527;
+  --line: #e6d5c1;
+  --dark: #25171b;
+  --light-ink: #fff2df;
+  --highlight: #ffc36e;
+  --orbit-night: #211419;
+  --hubuum-focus: #c65a32;
+  --hubuum-emphasis: #ab492b;
+  --hubuum-header: #211419ed;
+  --hubuum-header-border: #51322e;
+  --hubuum-button-border: #8d6151;
+  --hubuum-dark-hover: #4b2a26;
+  --hubuum-eyebrow-dark: #e6c5a5;
+  --hubuum-halo: #523026;
+  --hubuum-hero-copy: #dcc4b5;
+  --hubuum-accent-hover: #89351f;
+  --hubuum-quiet-hover: #f7e7d4;
+  --hubuum-cta-start: #ffd079;
+  --hubuum-cta-end: #ffac66;
+  --hubuum-cta-ink: #321a12;
+  --hubuum-cta-hover-start: #ffe0a1;
+  --hubuum-cta-hover-end: #ffc18b;
+  --hubuum-quiet-ink: #ffe6ce;
+  --hubuum-caption-dark: #d7b496;
+  --hubuum-footer-dark: #dec0a6;
+  --hubuum-surface: #fffaf2;
+  --hubuum-label: #786453;
+  --hubuum-surface-muted: #f7ecdc;
+  --hubuum-card-border: #ddc4ad;
+  --hubuum-connector: #d9a47a;
+  --hubuum-schema-surface: #faeddb;
+  --hubuum-schema-border: #e6c9a9;
+  --hubuum-free-surface: #fbf2e7;
+  --hubuum-free-border: #ddc8b4;
+  --hubuum-glyph: #a64e2d;
+  --hubuum-record-border: #e8d6c2;
+  --hubuum-muted-dark: #d9b69e;
+  --hubuum-line-dark: #624238;
+  --hubuum-copy-dark: #dfc5b1;
+  --hubuum-tab-border: #795041;
+  --hubuum-tab-active: #ffe5bc;
+  --hubuum-link-dark: #ffe6ca;
+  --hubuum-server-surface: #f8e6d0;
+  --hubuum-server-border: #eacba8;
+  --hubuum-server-hover: #f3dabd;
+  --hubuum-tool-hover: #fcf0e0;
+  --hubuum-tool-border: #e3c7ac;
+  --hubuum-tool-ink: #aa5432;
+  --md-text-font: var(--font);
+  --md-code-font: ui-monospace, "SFMono-Regular", Consolas, monospace;
+}
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: var(--accent);
+  --md-primary-fg-color--light: #c45c36;
+  --md-primary-fg-color--dark: #89351f;
+  --md-accent-fg-color: var(--accent);
+  --md-accent-fg-color--transparent: #af45271a;
+  --md-typeset-a-color: var(--accent);
+  --md-default-bg-color: var(--paper);
+  --md-default-fg-color: var(--ink);
+  --md-default-fg-color--light: var(--muted);
+  --md-code-bg-color: #f5e9da;
+  --md-code-fg-color: var(--ink);
+}
+[data-md-color-scheme="slate"] {
+  --md-hue: 15;
+  --md-primary-fg-color: var(--dark);
+  --md-primary-fg-color--light: #51322e;
+  --md-primary-fg-color--dark: var(--orbit-night);
+  --md-accent-fg-color: var(--highlight);
+  --md-accent-fg-color--transparent: #ffc36e1a;
+  --md-typeset-a-color: var(--highlight);
+  --md-default-bg-color: var(--orbit-night);
+  --md-default-fg-color: var(--light-ink);
+  --md-default-fg-color--light: var(--hubuum-copy-dark);
+  --md-code-bg-color: #352024;
+  --md-code-fg-color: var(--light-ink);
+}
+.md-header, .md-tabs, .md-banner {
+  background-color: var(--orbit-night);
+  color: var(--light-ink);
+}
+.md-search__form { background-color: #ffffff12; }
+.md-search__input::placeholder { color: var(--hubuum-copy-dark); }
+.md-typeset {
+  font-size: 0.85rem;
+  line-height: 1.7;
+}
+
+/* Give reference pages more room without widening prose-only guides. */
+body:has(.md-content table) .md-grid {
+  max-width: 80rem;
+}
+
+.md-typeset h1,
+.md-typeset h2 {
+  font-weight: 650;
+  letter-spacing: -0.025em;
+}
+
+.md-typeset h1 {
+  color: var(--md-default-fg-color);
+}
+
+.md-typeset .grid.cards > ul > li {
+  border-radius: 0.4rem;
+  border-top: 0.2rem solid var(--md-primary-fg-color);
+}
+
+.md-typeset table:not([class]) {
+  display: table;
+  font-size: 0.75rem;
+  min-width: 100%;
+}
+
+.md-typeset .md-typeset__table {
+  display: block;
+}
+
+.md-typeset table:not([class]) code {
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+.md-typeset table:not([class]) :is(th, td) {
+  padding: 0.75em 1em;
+}
+
+/* Keep explanatory columns readable when identifier tables scroll on phones. */
+.md-typeset table:not([class]):has(td:first-child > code) td:last-child {
+  min-width: 24ch;
+}
+
+.md-banner a {
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.md-banner label {
+  margin-inline-start: 1rem;
+}
+
+.md-banner select {
+  color: var(--md-default-fg-color);
+  background: var(--md-default-bg-color);
+  border: 1px solid currentColor;
+  border-radius: 0.2rem;
+  font: inherit;
+  margin: 0.2rem 0.3rem;
+  padding: 0.15rem 0.4rem;
+}
+.hubuum-ecosystem {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: .35rem 1rem;
+  padding: .3rem 0;
+}
+
+.hubuum-ecosystem a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.hubuum-ecosystem a:hover,
+.hubuum-ecosystem a:focus-visible {
+  text-decoration: underline;
+}
+
+/* Zensical's modern search trigger uses body colours unless set explicitly. */
+.md-search__button {
+  color: var(--light-ink);
+  background-color: #ffffff12;
+}
+.md-search__button:hover { background-color: #ffffff20; }
