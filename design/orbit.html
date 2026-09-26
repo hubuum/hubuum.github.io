@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, nofollow">
   <meta name="description" content="Hubuum: a flexible, open-source CMDB for authoritative and reference data, schema-bound or schema-free, connected through relations. Orbit design study.">
-  <meta name="theme-color" content="#174f57">
+  <meta name="theme-color" content="#211419">
   <title>Hubuum — Orbit / Design study 02</title>
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon-orbit.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/site.css">
   <script src="assets/site.js" defer></script>
 </head>
@@ -57,8 +57,8 @@
         <div class="section-label"><span>02 / Authority where it belongs</span><span class="section-rule"></span><span>Different sources. A shared inventory.</span></div>
         <div class="authority-heading"><h2>Authoritative here.<br>Authoritative elsewhere.<br><em>Together in Hubuum.</em></h2><p>One inventory for records you own and data whose authority stays elsewhere.</p></div>
         <div class="authority-grid">
-          <article class="authority-card"><span class="eyebrow">Data you maintain in Hubuum</span><h3>Make it the source of truth.</h3><p>Maintain your service catalogue, organisational data, or custom inventory directly in Hubuum.</p><div class="authority-example"><span class="example-symbol" aria-hidden="true"><svg class="brand-mark" viewBox="-32 -35 64 60" aria-hidden="true"><g transform="translate(0 0) scale(1)" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M-14-10 0-18 14-10 14 7 0 15-14 7Z M-14-10 0-2 14-10 M0-2V15 M0-18V-27 M14 7 23 12 M-14 7-23 12"/><circle cx="0" cy="-30" r="3"/><circle cx="26" cy="14" r="3"/><circle cx="-26" cy="14" r="3"/></g></svg></span><div><span class="example-label">Example / service catalogue</span><strong>Atlas</strong><span>Maintained in Hubuum</span></div></div></article>
-          <article class="authority-card"><span class="eyebrow">Data you bring from other systems</span><h3>Keep its authority upstream.</h3><p>Bring in reference data without moving its source of truth. Your integrations collect and refresh it.</p><div class="authority-example"><span class="example-symbol source-symbol" aria-hidden="true">↳</span><div><span class="example-label">Example / server inventory</span><strong>web-01</strong><span>Maintained in an upstream inventory</span></div></div></article>
+          <article class="authority-card"><span class="eyebrow">Data you maintain in Hubuum</span><h3>Make it the source of truth.</h3><p>Maintain your service catalogue, organisational data, or custom inventory directly in Hubuum.</p></article>
+          <article class="authority-card"><span class="eyebrow">Data you bring from other systems</span><h3>Keep its authority upstream.</h3><p>Bring in reference data without moving its source of truth. Your integrations collect and refresh it.</p></article>
         </div>
         <div class="authority-bridge"><span aria-hidden="true"></span><svg class="brand-mark" viewBox="-32 -35 64 60" aria-hidden="true"><g transform="translate(0 0) scale(1)" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M-14-10 0-18 14-10 14 7 0 15-14 7Z M-14-10 0-2 14-10 M0-2V15 M0-18V-27 M14 7 23 12 M-14 7-23 12"/><circle cx="0" cy="-30" r="3"/><circle cx="26" cy="14" r="3"/><circle cx="-26" cy="14" r="3"/></g></svg><strong>One CMDB. Both kinds of data.</strong><span aria-hidden="true"></span></div>
       </div>
@@ -85,7 +85,7 @@
         <div class="section-label"><span>04 / Bind objects through relations</span><span class="section-rule"></span><span>Make the context useful.</span></div>
         <div class="connection-heading"><h2>Objects hold the facts.<br><em>Relationships provide<br>the context.</em></h2><p>Connect objects across resource types,<br> sources, and schema choices.</p></div>
         <div class="connection-grid">
-          <div class="model-figure"><img src="assets/relationships.svg" loading="lazy" alt="Example: schema-bound service Atlas, authoritative in Hubuum, runs on schema-bound server web-01 from an upstream source. Atlas is described by schema-free research notes owned in Hubuum. The server is located in Oslo, represented by schema-free reference data from upstream."><span class="figure-caption">Atlas inventory · a few connected objects</span></div>
+          <div class="model-figure"><img src="assets/relationships-orbit.svg" loading="lazy" alt="Example: schema-bound service Atlas, authoritative in Hubuum, runs on schema-bound server web-01 from an upstream source. Atlas is described by schema-free research notes owned in Hubuum. The server is located in Oslo, represented by schema-free reference data from upstream."><span class="figure-caption">Atlas inventory · a few connected objects</span></div>
           <div class="model-story">
             <div class="model-tabs" role="tablist" aria-label="Explore the model">
               <button type="button" id="tab-classes" role="tab" aria-controls="panel-classes" aria-selected="true">Classes</button>
