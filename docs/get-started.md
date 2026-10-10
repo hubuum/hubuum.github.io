@@ -7,7 +7,7 @@
 | Run and recover a service | [Server administration](https://hubuum.github.io/hubuum/v0.0.18/administration/) | Monitoring, identity, backups, and upgrades |
 | Work from a terminal | [Install and connect](https://hubuum.github.io/hubuum-cli/v0.0.14/getting-started/) | Search, output pipelines, extensions, and examples |
 | Build a Rust integration | [Rust installation](https://hubuum.github.io/hubuum-client-rust/v0.14.1/getting-started/) | Client setup, querying, and generated API reference |
-| Build Python automation | [Python installation](https://github.com/hubuum/hubuum-client-python/blob/v0.0.11/docs/index.md) | Synchronous and asynchronous APIs, credentials, and tasks |
+| Build Python automation | [Python installation](https://hubuum.github.io/hubuum-client-python/v0.0.11/) | Synchronous and asynchronous APIs, credentials, and tasks |
 | Contribute a change | [Community and contributing](community.md) | The contributor guide in the affected repository |
 
 ## Start with a server
