@@ -2,12 +2,12 @@
 
 | Your goal | Start here | Then explore |
 | --- | --- | --- |
-| Understand whether Hubuum fits your organization | [Server documentation](https://hubuum.github.io/hubuum/) | The data model, permissions, and integration contracts |
-| Evaluate a complete installation | [Server deployment guides](https://hubuum.github.io/hubuum/) | [Frontend deployment](https://hubuum.github.io/hubuum-frontend/) |
-| Run and recover a service | [Server administration](https://hubuum.github.io/hubuum/) | Monitoring, identity, backups, and upgrades |
-| Work from a terminal | [CLI installation and guides](https://hubuum.github.io/hubuum-cli/) | Search, output pipelines, extensions, and examples |
-| Build a Rust integration | [Rust client](https://hubuum.github.io/hubuum-client-rust/) | Client setup, querying, and generated API reference |
-| Build Python automation | [Python client](https://hubuum.github.io/hubuum-client-python/) | Synchronous and asynchronous APIs, credentials, and tasks |
+| Understand whether Hubuum fits your organization | [Core concepts](https://hubuum.github.io/hubuum/v0.0.18/concepts/) | The data model, permissions, and integration contracts |
+| Evaluate a complete installation | [Run your first server](https://hubuum.github.io/hubuum/v0.0.18/getting-started/first-server/) | [Frontend Compose quick start](https://hubuum.github.io/hubuum-frontend/v0.0.19/quickstart-compose/) |
+| Run and recover a service | [Server administration](https://hubuum.github.io/hubuum/v0.0.18/administration/) | Monitoring, identity, backups, and upgrades |
+| Work from a terminal | [Install and connect](https://hubuum.github.io/hubuum-cli/v0.0.14/getting-started/) | Search, output pipelines, extensions, and examples |
+| Build a Rust integration | [Rust installation](https://hubuum.github.io/hubuum-client-rust/v0.14.1/getting-started/) | Client setup, querying, and generated API reference |
+| Build Python automation | [Python installation](https://github.com/hubuum/hubuum-client-python/blob/v0.0.11/docs/index.md) | Synchronous and asynchronous APIs, credentials, and tasks |
 | Contribute a change | [Community and contributing](community.md) | The contributor guide in the affected repository |
 
 ## Start with a server
