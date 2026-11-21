@@ -5,6 +5,7 @@
 | Understand whether Hubuum fits your organization | [Core concepts](https://hubuum.github.io/hubuum/v0.0.18/concepts/) | The data model, permissions, and integration contracts |
 | Evaluate a complete installation | [Run your first server](https://hubuum.github.io/hubuum/v0.0.18/getting-started/first-server/) | [Frontend Compose quick start](https://hubuum.github.io/hubuum-frontend/v0.0.19/quickstart-compose/) |
 | Run and recover a service | [Server administration](https://hubuum.github.io/hubuum/v0.0.18/administration/) | Monitoring, identity, backups, and upgrades |
+| Set up Keycloak or GitHub sign-in | [External authentication](external-authentication.md) | Qualified project versions, login guides, and recovery |
 | Work from a terminal | [Install and connect](https://hubuum.github.io/hubuum-cli/v0.0.14/getting-started/) | Search, output pipelines, extensions, and examples |
 | Build a Rust integration | [Rust installation](https://hubuum.github.io/hubuum-client-rust/v0.14.1/getting-started/) | Client setup, querying, and generated API reference |
 | Build Python automation | [Python installation](https://hubuum.github.io/hubuum-client-python/v0.0.11/) | Synchronous and asynchronous APIs, credentials, and tasks |
