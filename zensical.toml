@@ -9,6 +9,7 @@ docs_dir = "docs"
 nav = [
   { "Welcome" = "index.md" },
   { "Get started" = "get-started.md" },
+  { "External authentication" = "external-authentication.md" },
   { "Community" = "community.md" },
 ]
 

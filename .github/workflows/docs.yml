@@ -3,7 +3,7 @@ name: Documentation
 on:
   pull_request:
   push:
-    branches: [main]
+    branches: [main, project/auth-support]
   workflow_dispatch:
 
 permissions:
@@ -50,3 +50,32 @@ jobs:
     with:
       tooling_revision: '67b6ad74bf82fe4745db6ca0225b6af2a25eda7f'
       source_sha: ${{ needs.build.outputs.source_sha }}
+
+  candidate:
+    name: Authentication documentation candidate
+    needs: [build, check]
+    if: github.ref == 'refs/heads/project/auth-support' || github.base_ref == 'project/auth-support'
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: documentation-site
+          path: candidate/site
+      - name: Record candidate provenance
+        env:
+          SOURCE_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+        run: |
+          git archive --format=tar.gz --output=candidate/source.tar.gz HEAD
+          git rev-parse HEAD > candidate/TESTED_COMMIT
+          printf '%s\n' "$SOURCE_SHA" > candidate/SOURCE_COMMIT
+          printf '%s/actions/runs/%s/attempts/%s\n' "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY" "$GITHUB_RUN_ID" "$GITHUB_RUN_ATTEMPT" > candidate/WORKFLOW_RUN
+          (cd candidate && find . -type f ! -name SHA256SUMS -print0 | sort -z | xargs -0 sha256sum > SHA256SUMS)
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: auth-candidate-${{ github.sha }}-${{ github.run_id }}-${{ github.run_attempt }}
+          path: candidate/
+          if-no-files-found: error
+          retention-days: 30
